@@ -12,6 +12,7 @@
 		AF420A151DBE529600072FB6 /* TestArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A101DBE529600072FB6 /* TestArrayInt.cpp */; };
 		AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A161DC4D68F00072FB6 /* Graph.cpp */; };
 		AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */; };
+		AFEE8C501DC62392002C7EDF /* BaseSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFEE8C4E1DC62392002C7EDF /* BaseSort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,8 @@
 		AF420A171DC4D68F00072FB6 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 		AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestBinaryTree.cpp; sourceTree = "<group>"; };
 		AF420A1A1DC4E77700072FB6 /* TestBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBinaryTree.h; sourceTree = "<group>"; };
+		AFEE8C4E1DC62392002C7EDF /* BaseSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseSort.cpp; sourceTree = "<group>"; };
+		AFEE8C4F1DC62392002C7EDF /* BaseSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		AF420A001DBE506C00072FB6 /* DailyCoding */ = {
 			isa = PBXGroup;
 			children = (
+				AFEE8C4D1DC62197002C7EDF /* SortAlgorithms */,
 				AF420A091DBE51F800072FB6 /* DataStructure */,
 			);
 			path = DailyCoding;
@@ -92,6 +96,15 @@
 				AF420A1A1DC4E77700072FB6 /* TestBinaryTree.h */,
 			);
 			name = DataStructure;
+			sourceTree = "<group>";
+		};
+		AFEE8C4D1DC62197002C7EDF /* SortAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE8C4E1DC62392002C7EDF /* BaseSort.cpp */,
+				AFEE8C4F1DC62392002C7EDF /* BaseSort.h */,
+			);
+			name = SortAlgorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +136,7 @@
 				KnownAssetTags = (
 					New,
 				);
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = limingding;
 				TargetAttributes = {
 					AF4209FD1DBE506C00072FB6 = {
@@ -153,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEE8C501DC62392002C7EDF /* BaseSort.cpp in Sources */,
 				AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */,
 				AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */,
 				AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */,
@@ -178,8 +192,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -222,8 +238,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -278,6 +296,7 @@
 				AF420A071DBE506C00072FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
