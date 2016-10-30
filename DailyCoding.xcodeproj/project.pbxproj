@@ -10,6 +10,8 @@
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
 		AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0C1DBE529600072FB6 /* BinaryTree.cpp */; };
 		AF420A151DBE529600072FB6 /* TestArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A101DBE529600072FB6 /* TestArrayInt.cpp */; };
+		AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A161DC4D68F00072FB6 /* Graph.cpp */; };
+		AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,10 @@
 		AF420A0F1DBE529600072FB6 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		AF420A101DBE529600072FB6 /* TestArrayInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestArrayInt.cpp; sourceTree = "<group>"; };
 		AF420A111DBE529600072FB6 /* TestArrayInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayInt.h; sourceTree = "<group>"; };
+		AF420A161DC4D68F00072FB6 /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
+		AF420A171DC4D68F00072FB6 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestBinaryTree.cpp; sourceTree = "<group>"; };
+		AF420A1A1DC4E77700072FB6 /* TestBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBinaryTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,10 @@
 				AF420A0F1DBE529600072FB6 /* Node.h */,
 				AF420A101DBE529600072FB6 /* TestArrayInt.cpp */,
 				AF420A111DBE529600072FB6 /* TestArrayInt.h */,
+				AF420A161DC4D68F00072FB6 /* Graph.cpp */,
+				AF420A171DC4D68F00072FB6 /* Graph.h */,
+				AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */,
+				AF420A1A1DC4E77700072FB6 /* TestBinaryTree.h */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -143,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */,
+				AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */,
 				AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */,
 				AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */,
 				AF420A151DBE529600072FB6 /* TestArrayInt.cpp in Sources */,

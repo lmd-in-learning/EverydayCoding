@@ -111,6 +111,8 @@ void BinaryTree::DestroyTree(Node* leafNode)
         DestroyTree(leafNode->right);
         delete leafNode;
     }
+    //destroy the tree, the size should be return 0
+    m_nNodeCounts = 0;
 }
 
 Node* BinaryTree::GetMinNode() const

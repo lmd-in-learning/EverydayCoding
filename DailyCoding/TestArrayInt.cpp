@@ -99,13 +99,13 @@ void TestArrayInt::TestOperator()
 
 
 //test main
-int main()
-{
-    TestArrayInt runTest;
-    runTest.RunTests();
-    
-    return 0;
-}
+//int main()
+//{
+//    TestArrayInt runTest;
+//    runTest.RunTests();
+//    
+//    return 0;
+//}
 
 
 
