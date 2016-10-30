@@ -15,6 +15,7 @@ public:
     //<#member functions#>
     //set initiliaze capacity
     ArrayInt(int nCapacity);
+    ArrayInt();
     ~ArrayInt();
     
     //return the num of stored size
@@ -34,6 +35,9 @@ public:
     
     //operator [] for fetch index
     int& operator[](int nIndex);
+    
+    //clear all the items
+    void Clear();
     
 private:
     //<#instance variables#>

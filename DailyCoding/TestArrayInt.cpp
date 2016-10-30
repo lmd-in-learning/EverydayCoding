@@ -20,6 +20,7 @@ void TestArrayInt::RunTests()
     TestRemove();
     TestIsEmpty();
     TestOperator();
+    TestClear();
 }
 
 void TestArrayInt::TestGetSize()
@@ -95,6 +96,22 @@ void TestArrayInt::TestOperator()
     assert(test[0] == 5);
     assert(test[1] == 2);
     assert(test[2] == 3);
+}
+
+void TestArrayInt::TestClear()
+{
+    ArrayInt test(3);
+    
+    test.Push(1);
+    test.Push(2);
+    test.Push(3);
+
+    test.Clear();
+    assert(test.GetSize() == 0);
+    
+    test.Push(1);
+    assert(test.GetSize() == 1);
+    
 }
 
 

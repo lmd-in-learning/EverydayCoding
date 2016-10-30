@@ -27,6 +27,8 @@ public:
     void TestIsEmpty();
     
     void TestOperator();
+    
+    void TestClear();
 };
 
 #endif /* TestArrayInt_h */

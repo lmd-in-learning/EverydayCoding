@@ -18,6 +18,13 @@ m_nSize(0)
     m_pArray = new int[nCapacity];
 }
 
+ArrayInt::ArrayInt():
+m_nSize(0),
+m_nCapacity(10)
+{
+    m_pArray = new int[10];
+}
+
 ArrayInt::~ArrayInt()
 {
     delete []m_pArray;
@@ -99,6 +106,12 @@ void ArrayInt::CheckIsFull()
     }
 }
 
+void ArrayInt::Clear()
+{
+    delete []m_pArray;
+    m_pArray = new int[10];
+    m_nSize = 0;
+}
 
 
 

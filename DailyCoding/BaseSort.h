@@ -19,7 +19,7 @@ public:
     ~BaseSort();
     
     //sort the array int
-    virtual void Sort(ArrayInt& array) = 0;
+    //virtual void Sort(ArrayInt& array) = 0;
     
     //true if a < b
     bool Less(int a, int b) const;
