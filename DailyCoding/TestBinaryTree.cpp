@@ -111,12 +111,12 @@ void TestBinaryTree::TestDestroy()
 }
 
 //test
-int main()
-{
-    TestBinaryTree test;
-    test.RunTests();
-    return 0;
-}
+//int main()
+//{
+//    TestBinaryTree test;
+//    test.RunTests();
+//    return 0;
+//}
 
 
 

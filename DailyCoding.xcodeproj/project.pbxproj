@@ -13,6 +13,7 @@
 		AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A161DC4D68F00072FB6 /* Graph.cpp */; };
 		AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */; };
 		AFEE8C501DC62392002C7EDF /* BaseSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFEE8C4E1DC62392002C7EDF /* BaseSort.cpp */; };
+		AFEE8C531DC6291C002C7EDF /* SelectSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFEE8C511DC6291C002C7EDF /* SelectSort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		AF420A1A1DC4E77700072FB6 /* TestBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBinaryTree.h; sourceTree = "<group>"; };
 		AFEE8C4E1DC62392002C7EDF /* BaseSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseSort.cpp; sourceTree = "<group>"; };
 		AFEE8C4F1DC62392002C7EDF /* BaseSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSort.h; sourceTree = "<group>"; };
+		AFEE8C511DC6291C002C7EDF /* SelectSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectSort.cpp; sourceTree = "<group>"; };
+		AFEE8C521DC6291C002C7EDF /* SelectSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 			children = (
 				AFEE8C4E1DC62392002C7EDF /* BaseSort.cpp */,
 				AFEE8C4F1DC62392002C7EDF /* BaseSort.h */,
+				AFEE8C511DC6291C002C7EDF /* SelectSort.cpp */,
+				AFEE8C521DC6291C002C7EDF /* SelectSort.h */,
 			);
 			name = SortAlgorithms;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			files = (
 				AFEE8C501DC62392002C7EDF /* BaseSort.cpp in Sources */,
 				AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */,
+				AFEE8C531DC6291C002C7EDF /* SelectSort.cpp in Sources */,
 				AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */,
 				AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */,
 				AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */,

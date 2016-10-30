@@ -28,8 +28,8 @@ bool BaseSort::Less(int a, int b) const
 
 void BaseSort::ExchangePos(ArrayInt &array, int nPosi, int nPosj)
 {
-    assert(nPosi > 0 && nPosi < array.GetSize());
-    assert(nPosj > 0 && nPosj < array.GetSize());
+    assert(nPosi >= 0 && nPosi < array.GetSize());
+    assert(nPosj >= 0 && nPosj < array.GetSize());
     
     int tmp = array[nPosi];
     array[nPosi] = array[nPosj];
