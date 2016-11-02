@@ -71,6 +71,14 @@ void TestSortAlgorithms::RunShellSort()
     DeleteData();
 }
 
+void TestSortAlgorithms::RunMergeSort()
+{
+    PrepareData();
+    SortAlgorithms sort;
+    sort.MergeSort(*m_array);
+    assert(sort.IsSorted(*m_array));
+    DeleteData();
+}
 
 //UNIT TEST CASE
 int main()

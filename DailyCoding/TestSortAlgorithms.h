@@ -27,6 +27,8 @@ public:
     
     void RunShellSort();
     
+    void RunMergeSort();
+    
 private:
     void PrepareData();
     

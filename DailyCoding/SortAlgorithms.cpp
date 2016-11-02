@@ -86,6 +86,53 @@ void SortAlgorithms::ShellSort(ArrayInt &array)
     }
 }
 
+void SortAlgorithms::MergeSort(ArrayInt &array)
+{
+    MergeRecursion(array, 0, array.GetSize());
+}
+
+void SortAlgorithms::MergeRecursion(ArrayInt &array, int nLow, int nHigh)
+{
+    if (nLow <= nHigh)
+    {
+        return;
+    }
+    
+    int nMid = nLow + (nHigh - nLow)/2;
+    MergeRecursion(array, nLow, nMid);
+    MergeRecursion(array, nMid + 1, nHigh);
+    Merge(array, nLow, nMid, nHigh);
+}
+
+void SortAlgorithms::Merge(ArrayInt &array, int nLow, int nMid, int nHigh)
+{
+    //左边用尽（取右边）右边用尽（取左边）
+    //右半边当前元素小于左半边（取右半边），右半边当前元素大于等于左半边（取左半边）
+    int i = nLow;
+    int j = nMid + 1;
+    
+    ArrayInt tmpArray(array);
+    for (int k = nLow; k <= nHigh; ++k)
+    {
+        if (i > nMid)
+        {
+            array[k] = tmpArray[j++];
+        }
+        else if (j > nHigh)
+        {
+            array[k] = tmpArray[i++];
+        }
+        else if(Less(tmpArray[j], tmpArray[i]))
+        {
+            array[k] = tmpArray[j++];
+        }
+        else
+        {
+            array[k] = tmpArray[i++];
+        }
+    }
+}
+
 //UNIT TEST CASE
 //int main()
 //{

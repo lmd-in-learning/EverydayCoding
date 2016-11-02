@@ -31,6 +31,14 @@ public:
     //shell sort algorithm
     void ShellSort(ArrayInt& array);
     
+    //merge sort algotithm
+    void MergeSort(ArrayInt& array);
+    
+private:
+    void Merge(ArrayInt& array, int nLow, int nMid, int nHigh);
+    
+    void MergeRecursion(ArrayInt& array, int nLow, int nHigh);
+    
 };
 
 #endif /* InsertionSort_h */
