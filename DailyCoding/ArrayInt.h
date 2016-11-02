@@ -17,6 +17,8 @@ public:
     ArrayInt(int nCapacity);
     ArrayInt();
     ~ArrayInt();
+    ArrayInt(const ArrayInt& array);
+    ArrayInt& operator = (const ArrayInt& array);
     
     //return the num of stored size
     int GetSize() const;

@@ -25,6 +25,29 @@ m_nCapacity(10)
     m_pArray = new int[10];
 }
 
+ArrayInt::ArrayInt(const ArrayInt& array)
+{
+    m_nCapacity = array.m_nCapacity;
+    m_nSize = array.GetSize();
+    m_pArray = new int[m_nCapacity];
+    memcpy(m_pArray, array.m_pArray, m_nCapacity * sizeof(int));
+}
+
+ArrayInt& ArrayInt::operator=(const ArrayInt &array)
+{
+    if (this == &array)
+    {
+        return *this;
+    }
+    delete []m_pArray;
+    
+    m_nCapacity = array.m_nCapacity;
+    m_nSize = array.GetSize();
+    m_pArray = new int[m_nCapacity];
+    memcpy(m_pArray, array.m_pArray, m_nCapacity * sizeof(int));
+    return *this;
+}
+
 ArrayInt::~ArrayInt()
 {
     delete []m_pArray;
@@ -92,6 +115,7 @@ void ArrayInt::Inflate(int nIncrease)
     int *pTmp = new int[m_nCapacity + nIncrease];
     memset(pTmp, 0, m_nCapacity + nIncrease*sizeof(int));
     memcpy(pTmp, m_pArray, m_nCapacity*sizeof(int));
+    m_nCapacity += nIncrease;
     
     delete []m_pArray;
     m_pArray = pTmp;

@@ -29,6 +29,10 @@ public:
     void TestOperator();
     
     void TestClear();
+    
+    void TestCopyConstructor();
+
+    void TestAssignment();
 };
 
 #endif /* TestArrayInt_h */

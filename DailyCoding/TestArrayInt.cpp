@@ -21,6 +21,8 @@ void TestArrayInt::RunTests()
     TestIsEmpty();
     TestOperator();
     TestClear();
+    TestCopyConstructor();
+    TestAssignment();
 }
 
 void TestArrayInt::TestGetSize()
@@ -111,10 +113,36 @@ void TestArrayInt::TestClear()
     
     test.Push(1);
     assert(test.GetSize() == 1);
-    
 }
 
+void TestArrayInt::TestCopyConstructor()
+{
+    ArrayInt test(3);
+    test.Push(1);
+    test.Push(2);
+    test.Push(3);
+    
+    ArrayInt copyTest(test);
+    assert(copyTest.GetSize() == test.GetSize());
+    assert(copyTest[0] = test[0]);
+    assert(copyTest[1] = test[1]);
+    assert(copyTest[2] = test[2]);
+}
 
+void TestArrayInt::TestAssignment()
+{
+    ArrayInt test(3);
+    test.Push(1);
+    test.Push(2);
+    test.Push(3);
+    
+    ArrayInt assignTest;
+    assignTest = test;
+    assert(assignTest.GetSize() == test.GetSize());
+    assert(assignTest[0] = test[0]);
+    assert(assignTest[1] = test[1]);
+    assert(assignTest[2] = test[2]);
+}
 //test main
 //int main()
 //{
