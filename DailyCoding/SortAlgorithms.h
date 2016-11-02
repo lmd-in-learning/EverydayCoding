@@ -22,11 +22,14 @@ public:
     ~SortAlgorithms();
     
 public:
-    //select sort algorithms
+    //select sort algorithm
     void SelectSort(ArrayInt& array);
     
-    //insertion sort algorithms
+    //insertion sort algorithm
     void InsertionSort(ArrayInt& array);
+    
+    //shell sort algorithm
+    void ShellSort(ArrayInt& array);
     
 };
 

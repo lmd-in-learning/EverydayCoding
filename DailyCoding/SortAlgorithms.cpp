@@ -59,8 +59,62 @@ void SortAlgorithms::InsertionSort(ArrayInt &array)
     }
 }
 
+void SortAlgorithms::ShellSort(ArrayInt &array)
+{
+    assert(!array.IsEmpty());
+    
+    int h = 1;
+    while (h < array.GetSize() / 3)
+    {
+        h = h * 3 + 1;
+    }
+    
+    while (h >= 1)
+    {
+        for (int i = h; i < array.GetSize(); ++i)
+        {
+            for (int j = i; j >= h; j -= h)
+            {
+                if (Less(array[j], array[j - h]))
+                {
+                    ExchangePos(array, j, j - h);
+                }
+            }
+            
+        }
+        h = h / 3;
+    }
+}
+
 //UNIT TEST CASE
 //int main()
 //{
 //    return 0;
 //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -41,6 +41,7 @@ void TestSortAlgorithms::RunTests()
 {
     RunSelectSort();
     RunInsertionSort();
+    RunShellSort();
 }
 
 void TestSortAlgorithms::RunSelectSort()
@@ -61,6 +62,14 @@ void TestSortAlgorithms::RunInsertionSort()
     DeleteData();
 }
 
+void TestSortAlgorithms::RunShellSort()
+{
+    PrepareData();
+    SortAlgorithms sort;
+    sort.ShellSort(*m_array);
+    assert(sort.IsSorted(*m_array));
+    DeleteData();
+}
 
 
 //UNIT TEST CASE

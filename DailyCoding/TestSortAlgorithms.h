@@ -25,6 +25,8 @@ public:
     
     void RunInsertionSort();
     
+    void RunShellSort();
+    
 private:
     void PrepareData();
     
