@@ -34,10 +34,18 @@ public:
     //merge sort algotithm
     void MergeSort(ArrayInt& array);
     
+    //quick sort algorithm
+    void QuickSort(ArrayInt& array);
+    
+    
 private:
     void Merge(ArrayInt& array, int nLow, int nMid, int nHigh);
     
     void MergeRecursion(ArrayInt& array, int nLow, int nHigh);
+    
+    void QuickSortRecursion(ArrayInt& array, int nLow, int nHigh);
+    
+    int QuickPartition(ArrayInt& array, int nLow, int nHigh);
     
 };
 

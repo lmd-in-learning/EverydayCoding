@@ -91,6 +91,58 @@ void SortAlgorithms::MergeSort(ArrayInt &array)
     MergeRecursion(array, 0, array.GetSize());
 }
 
+void SortAlgorithms::QuickSort(ArrayInt &array)
+{
+    QuickSortRecursion(array, 0, array.GetSize() - 1);
+}
+
+void SortAlgorithms::QuickSortRecursion(ArrayInt &array, int nLow, int nHigh)
+{
+    if (nHigh <= nLow)
+    {
+        return;
+    }
+    
+    int nPos = QuickPartition(array, nLow, nHigh);
+    QuickSortRecursion(array, nLow, nPos - 1);
+    QuickSortRecursion(array, nPos + 1, nHigh);
+}
+
+int SortAlgorithms::QuickPartition(ArrayInt &array, int nLow, int nHigh)
+{
+    int i = nLow;
+    int j = nHigh + 1;
+    
+    int nInit = array[nLow];
+    
+    while (true)
+    {
+        while (Less(array[++i], nInit))
+        {
+            if (i == nHigh)
+            {
+                break;
+            }
+        }
+        while (Less(nInit, array[--j]))
+        {
+            if (j == nLow)
+            {
+                break;
+            }
+        }
+        if (i >= j)
+        {
+            break;
+        }
+        ExchangePos(array, i, j);
+    }
+    
+    ExchangePos(array, nLow, j);
+        
+    return j;
+}
+
 void SortAlgorithms::MergeRecursion(ArrayInt &array, int nLow, int nHigh)
 {
     if (nLow <= nHigh)
