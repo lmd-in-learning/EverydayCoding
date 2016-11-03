@@ -117,19 +117,13 @@ int SortAlgorithms::QuickPartition(ArrayInt &array, int nLow, int nHigh)
     
     while (true)
     {
-        while (Less(array[++i], nInit))
+        while (Less(array[++i], nInit) && i < nHigh)
         {
-            if (i == nHigh)
-            {
-                break;
-            }
+            
         }
-        while (Less(nInit, array[--j]))
+        while (Less(nInit, array[--j]) && j > nLow)
         {
-            if (j == nLow)
-            {
-                break;
-            }
+            
         }
         if (i >= j)
         {
