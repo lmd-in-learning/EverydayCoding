@@ -37,6 +37,8 @@ public:
     //quick sort algorithm
     void QuickSort(ArrayInt& array);
     
+    //quick 3 way sort algorithm
+    void Quick3Way(ArrayInt& array);
     
 private:
     void Merge(ArrayInt& array, int nLow, int nMid, int nHigh);
@@ -46,7 +48,8 @@ private:
     void QuickSortRecursion(ArrayInt& array, int nLow, int nHigh);
     
     int QuickPartition(ArrayInt& array, int nLow, int nHigh);
-    
+  
+    void Quick3WayRecursion(ArrayInt& array, int nLow, int nHigh);
 };
 
 #endif /* InsertionSort_h */

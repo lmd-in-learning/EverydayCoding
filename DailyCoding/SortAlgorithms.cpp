@@ -96,6 +96,38 @@ void SortAlgorithms::QuickSort(ArrayInt &array)
     QuickSortRecursion(array, 0, array.GetSize() - 1);
 }
 
+void SortAlgorithms::Quick3Way(ArrayInt& array)
+{
+    Quick3WayRecursion(array, 0, array.GetSize() - 1);
+}
+
+void SortAlgorithms::Quick3WayRecursion(ArrayInt &array, int nLow, int nHigh)
+{
+    if (nHigh <= nLow)
+    {
+        return;
+    }
+    int nLt = nLow, i = nLow + 1, nGt = nHigh;
+    
+    while (i <= nGt)
+    {
+        if (Less(array[i], array[nLow]))
+        {
+            ExchangePos(array, nLt++, i++);
+        }
+        else if(!Less(array[i], array[nLow]))
+        {
+            ExchangePos(array, i, nGt--);
+        }
+        else
+        {
+            i++;
+        }
+    }
+    Quick3WayRecursion(array, nLow, nLt - 1);
+    Quick3WayRecursion(array, nGt + 1, nHigh);
+}
+
 void SortAlgorithms::QuickSortRecursion(ArrayInt &array, int nLow, int nHigh)
 {
     if (nHigh <= nLow)

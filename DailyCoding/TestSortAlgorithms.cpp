@@ -43,6 +43,7 @@ void TestSortAlgorithms::RunTests()
     RunInsertionSort();
     RunShellSort();
     RunQuickSort();
+    RunQuick3WaySort();
 }
 
 void TestSortAlgorithms::RunSelectSort()
@@ -86,6 +87,15 @@ void TestSortAlgorithms::RunQuickSort()
     PrepareData();
     SortAlgorithms sort;
     sort.QuickSort(*m_array);
+    assert(sort.IsSorted(*m_array));
+    DeleteData();
+}
+
+void TestSortAlgorithms::RunQuick3WaySort()
+{
+    PrepareData();
+    SortAlgorithms sort;
+    sort.Quick3Way(*m_array);
     assert(sort.IsSorted(*m_array));
     DeleteData();
 }
