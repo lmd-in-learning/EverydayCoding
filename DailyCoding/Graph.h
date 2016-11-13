@@ -8,23 +8,42 @@
 
 #ifndef Graph_h
 #define Graph_h
+#include <vector>
+#include <string.h>
+
+using std::vector;
+using std::string;
 
 class Graph {
     
 public:
-    //<#member functions#>
-    Graph(int nPointNum);
+    //create a graph with n vertexes and without any edges
+    Graph(int nVertexes);
     
     ~Graph();
     
-    int GetPointNum();
+    //get vertexes count
+    int GetVertexesCount();
     
-    int GetEdgesNum();
+    //get edge count
+    int GetEdgesCount();
     
-    void AddEdge(int nPointNum, int nEdgeNum);
+    //add a edge between v and w
+    void AddEdge(int v, int w);
+    
+    //return the vertexes adjacent v
+    vector<int> Adjacent(int v);
     
 private:
     //<#instance variables#>
+    //the vertexes count
+    int m_nVertexesNum;
+    
+    //the edges count
+    int m_nEdges;
+    
+    //the adjacent table
+    vector<vector<int>> m_VAdjacent;
 };
 
 #endif /* Graph_h */
