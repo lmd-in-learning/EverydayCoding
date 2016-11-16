@@ -43,9 +43,9 @@ void DepthFirstSearch::Dfs(Graph graph, int v)
 
     for (int i = 0; i < graph.Adjacent(v).size(); ++i)
     {
-        if (!IsMarked(i))
+        if (!IsMarked(graph.Adjacent(v)[i]))
         {
-            Dfs(graph, i);
+            Dfs(graph, graph.Adjacent(v)[i]);
         }
     }
 }

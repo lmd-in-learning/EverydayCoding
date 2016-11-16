@@ -21,8 +21,10 @@ public:
     DepthFirstSearch(Graph graph, int s);
     ~DepthFirstSearch();
     
+    //return true if w and s are connected
     bool IsMarked(int w);
     
+    //return the vertexes count which are connected to s
     int Count();
     
 private:
