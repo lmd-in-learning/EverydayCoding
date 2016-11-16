@@ -41,11 +41,13 @@ void DepthFirstSearch::Dfs(Graph graph, int v)
     m_vMarked[v] = true;
     m_nCount++;
 
+    int w = 0;
     for (int i = 0; i < graph.Adjacent(v).size(); ++i)
     {
-        if (!IsMarked(graph.Adjacent(v)[i]))
+        w = graph.Adjacent(v)[i];
+        if (!IsMarked(w))
         {
-            Dfs(graph, graph.Adjacent(v)[i]);
+            Dfs(graph, w);
         }
     }
 }
