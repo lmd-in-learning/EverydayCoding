@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E58091DDCA37C001740C6 /* Paths.cpp */; };
+		AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */; };
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
 		AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0C1DBE529600072FB6 /* BinaryTree.cpp */; };
 		AF420A151DBE529600072FB6 /* TestArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A101DBE529600072FB6 /* TestArrayInt.cpp */; };
@@ -31,6 +33,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF0E58091DDCA37C001740C6 /* Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paths.cpp; sourceTree = "<group>"; };
+		AF0E580A1DDCA37C001740C6 /* Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
+		AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstPaths.cpp; sourceTree = "<group>"; };
+		AF0E580D1DDCA524001740C6 /* DepthFirstPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthFirstPaths.h; sourceTree = "<group>"; };
 		AF4209FE1DBE506C00072FB6 /* DailyCoding */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DailyCoding; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayInt.cpp; sourceTree = "<group>"; };
 		AF420A0B1DBE529600072FB6 /* ArrayInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayInt.h; sourceTree = "<group>"; };
@@ -102,6 +108,10 @@
 				AF420A171DC4D68F00072FB6 /* Graph.h */,
 				AFAB1D081DD8ADDE00910B00 /* DepthFirstSearch.cpp */,
 				AFAB1D091DD8ADDE00910B00 /* DepthFirstSearch.h */,
+				AF0E58091DDCA37C001740C6 /* Paths.cpp */,
+				AF0E580A1DDCA37C001740C6 /* Paths.h */,
+				AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */,
+				AF0E580D1DDCA524001740C6 /* DepthFirstPaths.h */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -193,11 +203,13 @@
 				AFEE8C591DC63733002C7EDF /* TestSortAlgorithms.cpp in Sources */,
 				AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */,
 				AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */,
+				AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */,
 				AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */,
 				AFEE8C561DC631C5002C7EDF /* SortAlgorithms.cpp in Sources */,
 				AFAB1D0A1DD8ADDE00910B00 /* DepthFirstSearch.cpp in Sources */,
 				AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */,
 				AF420A151DBE529600072FB6 /* TestArrayInt.cpp in Sources */,
+				AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
