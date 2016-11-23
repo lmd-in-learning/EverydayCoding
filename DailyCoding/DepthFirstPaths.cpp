@@ -11,6 +11,7 @@
 #include <assert.h>
 
 DepthFirstPaths::DepthFirstPaths(Graph graph, int s):Paths(graph, s)
+,m_nS(s)
 {
     for (size_t i = 0; i < graph.GetVertexesCount(); ++i)
     {

@@ -17,6 +17,7 @@ class DepthFirstPaths : public Paths
 {
     
 public:
+    //find all the edges begin with s
     DepthFirstPaths(Graph graph, int s);
     virtual ~DepthFirstPaths();
     
@@ -33,6 +34,6 @@ private:
     
     vector<int> m_vEdgeTo;
     
-    int m_nS;
+    const int m_nS;
 };
 #endif /* DepthFirstPaths_h */
