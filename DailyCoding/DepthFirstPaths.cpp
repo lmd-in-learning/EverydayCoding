@@ -17,7 +17,7 @@ DepthFirstPaths::DepthFirstPaths(Graph graph, int s):Paths(graph, s)
         m_vMarked.push_back(false);
         m_vEdgeTo.push_back(-1);
     }
-    m_nS = s;
+    
     Dfs(graph, s);
 }
 
@@ -53,10 +53,9 @@ void DepthFirstPaths::Dfs(Graph graph, int v)
 {
     m_vMarked[v] = true;
     
-    int w = 0;
     for (size_t i = 0; i < graph.Adjacent(v).size(); ++i)
     {
-        w = graph.Adjacent(v)[i];
+        int w = graph.Adjacent(v)[i];
         if (!m_vMarked[w])
         {
             m_vEdgeTo[w] = v;

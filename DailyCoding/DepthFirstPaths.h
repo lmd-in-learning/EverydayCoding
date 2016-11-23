@@ -20,8 +20,10 @@ public:
     DepthFirstPaths(Graph graph, int s);
     virtual ~DepthFirstPaths();
     
+    //return true if s and v are connected
     virtual bool HasPathTo(int v);
     
+    //return the edges between s and v
     virtual vector<int> PathTo(int v);
     
 private:
