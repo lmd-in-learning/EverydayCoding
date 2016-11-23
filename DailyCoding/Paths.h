@@ -19,6 +19,7 @@ class Paths
 {
     
 public:
+    //find all the edges begin with s
     Paths(Graph graph, int s);
     
     virtual ~Paths();
