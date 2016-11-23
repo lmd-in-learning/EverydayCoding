@@ -21,7 +21,7 @@ BreadthFirstPaths::BreadthFirstPaths(Graph graph, int s):Paths(graph, s)
         m_vEdgeTo.push_back(-1);
     }
     
-    
+    Bfs(graph, s);
 }
 
 BreadthFirstPaths::~BreadthFirstPaths()
