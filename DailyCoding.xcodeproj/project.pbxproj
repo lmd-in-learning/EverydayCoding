@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0A07751DE5DEE1004C4D90 /* BreadthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07731DE5DEE1004C4D90 /* BreadthFirstPaths.cpp */; };
 		AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E58091DDCA37C001740C6 /* Paths.cpp */; };
 		AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */; };
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
@@ -33,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF0A07731DE5DEE1004C4D90 /* BreadthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BreadthFirstPaths.cpp; sourceTree = "<group>"; };
+		AF0A07741DE5DEE1004C4D90 /* BreadthFirstPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreadthFirstPaths.h; sourceTree = "<group>"; };
 		AF0E58091DDCA37C001740C6 /* Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paths.cpp; sourceTree = "<group>"; };
 		AF0E580A1DDCA37C001740C6 /* Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
 		AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstPaths.cpp; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				AF0E580A1DDCA37C001740C6 /* Paths.h */,
 				AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */,
 				AF0E580D1DDCA524001740C6 /* DepthFirstPaths.h */,
+				AF0A07731DE5DEE1004C4D90 /* BreadthFirstPaths.cpp */,
+				AF0A07741DE5DEE1004C4D90 /* BreadthFirstPaths.h */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0A07751DE5DEE1004C4D90 /* BreadthFirstPaths.cpp in Sources */,
 				AFEE8C501DC62392002C7EDF /* BaseSort.cpp in Sources */,
 				AFEE8C591DC63733002C7EDF /* TestSortAlgorithms.cpp in Sources */,
 				AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */,
