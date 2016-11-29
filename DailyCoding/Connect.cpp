@@ -23,6 +23,7 @@ m_nCount(0)
         if (!m_vMarked[s])
         {
             Dfs(graph, s);
+            m_nCount++;
         }
     }
 }
