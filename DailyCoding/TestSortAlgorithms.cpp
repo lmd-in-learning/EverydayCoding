@@ -101,12 +101,12 @@ void TestSortAlgorithms::RunQuick3WaySort()
 }
 
 //UNIT TEST CASE
-int main()
-{
-    TestSortAlgorithms test;
-    test.RunTests();
-    return 0;
-}
+//int main()
+//{
+//    TestSortAlgorithms test;
+//    test.RunTests();
+//    return 0;
+//}
 
 
 
