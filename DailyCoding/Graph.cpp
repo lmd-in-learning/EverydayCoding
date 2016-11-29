@@ -43,6 +43,7 @@ void Graph::AddEdge(int v, int w)
     assert(w >= 0 && w < m_VAdjacent.size());
     m_VAdjacent[v].push_back(w);
     m_VAdjacent[w].push_back(v);
+    m_nEdges++;
 }
 
 vector<int> Graph::Adjacent(int v)
