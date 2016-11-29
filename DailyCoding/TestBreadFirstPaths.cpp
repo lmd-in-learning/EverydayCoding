@@ -60,6 +60,13 @@ void TestBreadFirstPaths::TestPathTo()
 {
     PrepareData();
     vector<int> vPaths;
+    vPaths = m_pBredthFirstPaths->PathTo(0);
+    assert(vPaths.size() == 1);
+    assert(vPaths[0] == 0);
+    vPaths = m_pBredthFirstPaths->PathTo(1);
+    assert(vPaths.size() == 2);
+    assert(vPaths[0] == 1);
+    assert(vPaths[1] == 0);
     vPaths = m_pBredthFirstPaths->PathTo(2);
     assert(vPaths.size() == 2);
     assert(vPaths[0] == 2);
@@ -74,6 +81,10 @@ void TestBreadFirstPaths::TestPathTo()
     assert(vPaths[0] == 4);
     assert(vPaths[1] == 2);
     assert(vPaths[2] == 0);
+    vPaths = m_pBredthFirstPaths->PathTo(5);
+    assert(vPaths.size() == 2);
+    assert(vPaths[0] == 5);
+    assert(vPaths[1] == 0);
     DeleteData();
 }
 
