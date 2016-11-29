@@ -39,6 +39,10 @@ vector<int> BreadthFirstPaths::PathTo(int v)
 {
     assert(v >= 0 && v < m_vEdgeTo.size());
     vector<int> paths;
+    if (!HasPathTo(v))
+    {
+        return paths;
+    }
     for (int x = v; x != m_nS; x = m_vEdgeTo[x])
     {
         paths.push_back(x);
