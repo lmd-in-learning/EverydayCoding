@@ -108,12 +108,12 @@ void TestDepthFirstPaths::TestPathTo()
 }
 
 //test main
-int main()
-{
-    TestDepthFirstPaths test;
-    test.Tests();
-    return 0;
-}
+//int main()
+//{
+//    TestDepthFirstPaths test;
+//    test.Tests();
+//    return 0;
+//}
 
 
 
