@@ -18,7 +18,7 @@ class BreadthFirstPaths : public Paths
     //public funtions
 public:
     //find all the edges begin with s
-    BreadthFirstPaths(Graph graph, int s);
+    BreadthFirstPaths(Graph& graph, int s);
     
     virtual ~BreadthFirstPaths();
     
@@ -30,7 +30,7 @@ public:
     
     //private funtions
 private:
-    void Bfs(Graph graph, int s);
+    void Bfs(Graph& graph, int s);
     
     //private variable
 private:

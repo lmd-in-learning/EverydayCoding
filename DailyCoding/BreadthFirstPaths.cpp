@@ -12,7 +12,7 @@
 #include <queue>
 using std::queue;
 
-BreadthFirstPaths::BreadthFirstPaths(Graph graph, int s):Paths(graph, s)
+BreadthFirstPaths::BreadthFirstPaths(Graph& graph, int s):Paths(graph, s)
 ,m_nS(s)
 {
     for (size_t i = 0; i < graph.GetVertexesCount(); ++i)
@@ -48,7 +48,7 @@ vector<int> BreadthFirstPaths::PathTo(int v)
     return paths;
 }
 
-void BreadthFirstPaths::Bfs(Graph graph, int s)
+void BreadthFirstPaths::Bfs(Graph& graph, int s)
 {
     assert(s >= 0 && s < m_vMarked.size());
     queue<int> edgeQueue;
