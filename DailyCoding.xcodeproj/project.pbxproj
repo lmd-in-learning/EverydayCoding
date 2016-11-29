@@ -10,6 +10,7 @@
 		AF0A07751DE5DEE1004C4D90 /* BreadthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07731DE5DEE1004C4D90 /* BreadthFirstPaths.cpp */; };
 		AF0A07781DED9AD5004C4D90 /* TestBreadFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07761DED9AD5004C4D90 /* TestBreadFirstPaths.cpp */; };
 		AF0A077B1DED9C7B004C4D90 /* TestGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07791DED9C7B004C4D90 /* TestGraph.cpp */; };
+		AF0A077E1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A077C1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp */; };
 		AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E58091DDCA37C001740C6 /* Paths.cpp */; };
 		AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */; };
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
@@ -42,6 +43,8 @@
 		AF0A07771DED9AD5004C4D90 /* TestBreadFirstPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBreadFirstPaths.h; sourceTree = "<group>"; };
 		AF0A07791DED9C7B004C4D90 /* TestGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestGraph.cpp; sourceTree = "<group>"; };
 		AF0A077A1DED9C7B004C4D90 /* TestGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGraph.h; sourceTree = "<group>"; };
+		AF0A077C1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestDepthFirstPaths.cpp; sourceTree = "<group>"; };
+		AF0A077D1DEDB5DF004C4D90 /* TestDepthFirstPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDepthFirstPaths.h; sourceTree = "<group>"; };
 		AF0E58091DDCA37C001740C6 /* Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paths.cpp; sourceTree = "<group>"; };
 		AF0E580A1DDCA37C001740C6 /* Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
 		AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstPaths.cpp; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				AF0A07771DED9AD5004C4D90 /* TestBreadFirstPaths.h */,
 				AF0A07791DED9C7B004C4D90 /* TestGraph.cpp */,
 				AF0A077A1DED9C7B004C4D90 /* TestGraph.h */,
+				AF0A077C1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp */,
+				AF0A077D1DEDB5DF004C4D90 /* TestDepthFirstPaths.h */,
 			);
 			name = UnitTest;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			files = (
 				AF0A07751DE5DEE1004C4D90 /* BreadthFirstPaths.cpp in Sources */,
 				AFEE8C501DC62392002C7EDF /* BaseSort.cpp in Sources */,
+				AF0A077E1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp in Sources */,
 				AFEE8C591DC63733002C7EDF /* TestSortAlgorithms.cpp in Sources */,
 				AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */,
 				AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */,

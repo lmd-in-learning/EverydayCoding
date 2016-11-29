@@ -101,12 +101,12 @@ void TestBreadFirstPaths::TestHasPathTo()
 }
 
 //test main
-int main()
-{
-    TestBreadFirstPaths test;
-    test.Tests();
-    return 0;
-}
+//int main()
+//{
+//    TestBreadFirstPaths test;
+//    test.Tests();
+//    return 0;
+//}
 
 
 

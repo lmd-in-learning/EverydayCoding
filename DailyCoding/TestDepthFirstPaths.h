@@ -1,28 +1,27 @@
 //
-//  TestBreadFirstPaths.hpp
+//  TestDepthFirstPaths.hpp
 //  DailyCoding
 //
 //  Created by limingding on 11/29/16.
 //  Copyright © 2016 limingding. All rights reserved.
 //
 
-#ifndef TestBreadFirstPaths_h
-#define TestBreadFirstPaths_h
+#ifndef TestDepthFirstPaths_h
+#define TestDepthFirstPaths_h
 
 #include <stdio.h>
 
 class Graph;
-class BreadthFirstPaths;
+class DepthFirstPaths;
 
-class TestBreadFirstPaths
+class TestDepthFirstPaths
 {
     //constructor
 public:
-    TestBreadFirstPaths();
+    TestDepthFirstPaths();
+    ~TestDepthFirstPaths();
     
-    ~TestBreadFirstPaths();
-    
-    //public funtions
+    //public functions
 public:
     void Tests();
     
@@ -30,7 +29,7 @@ public:
     
     void TestPathTo();
     
-    //private funtions
+    //private functions
 private:
     void PrepareData();
     
@@ -40,6 +39,9 @@ private:
 private:
     Graph* m_pGraph;
     
-    BreadthFirstPaths* m_pBredthFirstPaths;
+    DepthFirstPaths* m_pDepthFirstPaths;
+    
 };
-#endif /* TestBreadFirstPaths_h */
+
+
+#endif /* TestDepthFirstPaths_h */
