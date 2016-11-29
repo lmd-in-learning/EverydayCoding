@@ -18,7 +18,7 @@ class DepthFirstPaths : public Paths
     
 public:
     //find all the edges begin with s
-    DepthFirstPaths(Graph graph, int s);
+    DepthFirstPaths(Graph& graph, int s);
     virtual ~DepthFirstPaths();
     
     //return true if s and v are connected
@@ -28,7 +28,7 @@ public:
     virtual vector<int> PathTo(int v);
     
 private:
-    void Dfs(Graph graph, int v);
+    void Dfs(Graph& graph, int v);
     
     vector<bool> m_vMarked;
     

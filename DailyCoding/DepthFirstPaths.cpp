@@ -10,7 +10,7 @@
 #include "Graph.h"
 #include <assert.h>
 
-DepthFirstPaths::DepthFirstPaths(Graph graph, int s):Paths(graph, s)
+DepthFirstPaths::DepthFirstPaths(Graph& graph, int s):Paths(graph, s)
 ,m_nS(s)
 {
     for (size_t i = 0; i < graph.GetVertexesCount(); ++i)
@@ -35,22 +35,22 @@ bool DepthFirstPaths::HasPathTo(int v)
 
 vector<int> DepthFirstPaths::PathTo(int v)
 {
-    vector<int> path;
+    vector<int> paths;
     if (!HasPathTo(v))
     {
-        return path;
+        return paths;
     }
     
     for (int x = v; x != m_nS; x = m_vEdgeTo[x])
     {
-        path.push_back(x);
+        paths.push_back(x);
     }
     
-    path.push_back(m_nS);
-    return path;
+    paths.push_back(m_nS);
+    return paths;
 }
 
-void DepthFirstPaths::Dfs(Graph graph, int v)
+void DepthFirstPaths::Dfs(Graph& graph, int v)
 {
     m_vMarked[v] = true;
     
