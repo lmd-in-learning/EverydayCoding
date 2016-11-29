@@ -19,6 +19,7 @@ class Graph;
 class Connect
 {
     //constructor
+public:
     Connect(Graph& graph);
     virtual ~Connect();
     
