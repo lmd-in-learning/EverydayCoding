@@ -121,10 +121,10 @@ void TestConnect::TestCount()
     DeleteData();
 }
 
-//test main
-int main()
-{
-    TestConnect test;
-    test.Tests();
-    return 0;
-}
+////test main
+//int main()
+//{
+//    TestConnect test;
+//    test.Tests();
+//    return 0;
+//}
