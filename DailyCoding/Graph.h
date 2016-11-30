@@ -9,10 +9,8 @@
 #ifndef Graph_h
 #define Graph_h
 #include <vector>
-#include <string.h>
 
 using std::vector;
-using std::string;
 
 class Graph {
     
