@@ -32,6 +32,8 @@ CycleGraph::~CycleGraph()
 
 void CycleGraph::Dfs(Graph &graph, int v, int u)
 {
+    assert(v >= 0 && v < m_vMarked.size());
+    assert(u >= 0 && u < m_vMarked.size());
     m_vMarked[v] = true;
     for (size_t i = 0; i < graph.Adjacent(v).size(); ++i)
     {
