@@ -61,12 +61,12 @@ void TestCycleGraph::TestHasCycle()
 }
 
 //test main
-int main()
-{
-    TestCycleGraph test;
-    test.Tests();
-    return 0;
-}
+//int main()
+//{
+//    TestCycleGraph test;
+//    test.Tests();
+//    return 0;
+//}
 
 
 
