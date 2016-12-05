@@ -18,6 +18,7 @@
 		AF0A078F1DEF0DF3004C4D90 /* TwoColorGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A078D1DEF0DF3004C4D90 /* TwoColorGraph.cpp */; };
 		AF0A07921DEF146D004C4D90 /* DirectionGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07901DEF146D004C4D90 /* DirectionGraph.cpp */; };
 		AF0A07951DF3B565004C4D90 /* TestDirectionGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07931DF3B565004C4D90 /* TestDirectionGraph.cpp */; };
+		AF0A07A41DF59E81004C4D90 /* DirectedDFS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07A21DF59E81004C4D90 /* DirectedDFS.cpp */; };
 		AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E58091DDCA37C001740C6 /* Paths.cpp */; };
 		AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */; };
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
@@ -67,6 +68,8 @@
 		AF0A07931DF3B565004C4D90 /* TestDirectionGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestDirectionGraph.cpp; sourceTree = "<group>"; };
 		AF0A07941DF3B565004C4D90 /* TestDirectionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDirectionGraph.h; sourceTree = "<group>"; };
 		AF0A07971DF3B75D004C4D90 /* UnitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTest.h; sourceTree = "<group>"; };
+		AF0A07A21DF59E81004C4D90 /* DirectedDFS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectedDFS.cpp; sourceTree = "<group>"; };
+		AF0A07A31DF59E81004C4D90 /* DirectedDFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectedDFS.h; sourceTree = "<group>"; };
 		AF0E58091DDCA37C001740C6 /* Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paths.cpp; sourceTree = "<group>"; };
 		AF0E580A1DDCA37C001740C6 /* Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
 		AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstPaths.cpp; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				AF0A078E1DEF0DF3004C4D90 /* TwoColorGraph.h */,
 				AF0A07901DEF146D004C4D90 /* DirectionGraph.cpp */,
 				AF0A07911DEF146D004C4D90 /* DirectionGraph.h */,
+				AF0A07A21DF59E81004C4D90 /* DirectedDFS.cpp */,
+				AF0A07A31DF59E81004C4D90 /* DirectedDFS.h */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				AF0A07951DF3B565004C4D90 /* TestDirectionGraph.cpp in Sources */,
 				AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */,
 				AF0A077B1DED9C7B004C4D90 /* TestGraph.cpp in Sources */,
+				AF0A07A41DF59E81004C4D90 /* DirectedDFS.cpp in Sources */,
 				AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */,
 				AFEE8C561DC631C5002C7EDF /* SortAlgorithms.cpp in Sources */,
 				AF0A078B1DEF08E4004C4D90 /* TestCycleGraph.cpp in Sources */,
