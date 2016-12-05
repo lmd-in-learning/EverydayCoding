@@ -11,9 +11,9 @@
 
 #include <stdio.h>
 #include <time.h>
-char error_msg[256];
-int  tests_number;
-int  failed_number;
+extern char error_msg[256];
+extern int  tests_number;
+extern int  failed_number;
 
 #define mu_assert(message, test) do { if(!(test)) {sprintf(error_msg, "[%s: ln %d] %s", __FILE__, __LINE__, message); return error_msg; }} while(0)
 

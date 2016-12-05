@@ -106,9 +106,9 @@ char* TestDirectionGraph::TestReverse()
 }
 
 //test main
-int main()
-{
-    TestDirectionGraph testDirectionGraph;
-    mu_run_test(testDirectionGraph.Tests);
-    return 0;
-}
+//int main()
+//{
+//    TestDirectionGraph testDirectionGraph;
+//    mu_run_test(testDirectionGraph.Tests);
+//    return 0;
+//}
