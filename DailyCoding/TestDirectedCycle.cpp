@@ -93,8 +93,8 @@ char* TestDirectedCycle::TestCycle()
 //test main
 int main()
 {
-    TestDirectedCycle test;
-    mu_run_test(test.Tests);
+    TestDirectedCycle testDirectedCycle;
+    mu_run_test(testDirectedCycle.Tests);
     return 0;
 }
 
