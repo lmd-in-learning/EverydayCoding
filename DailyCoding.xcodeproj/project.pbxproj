@@ -150,9 +150,9 @@
 		AF420A091DBE51F800072FB6 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				AF0A07AD1DF99974004C4D90 /* DepthFirstOrder.cpp */,
 				AF0A07B01DF99E8C004C4D90 /* Topological.cpp */,
 				AF0A07B11DF99E8C004C4D90 /* Topological.h */,
+				AF0A07AD1DF99974004C4D90 /* DepthFirstOrder.cpp */,
 				AF0A07AE1DF99974004C4D90 /* DepthFirstOrder.h */,
 				AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */,
 				AF420A0B1DBE529600072FB6 /* ArrayInt.h */,
