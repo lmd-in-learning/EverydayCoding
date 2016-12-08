@@ -6,6 +6,7 @@
 //  Copyright © 2016 limingding. All rights reserved.
 //
 
+#include <assert.h>
 #include "DepthFirstOrder.h"
 #include "DirectionGraph.h"
 
@@ -27,13 +28,17 @@ DepthFirstOrder::DepthFirstOrder(DirectionGraph& graph)
 
 void DepthFirstOrder::Dfs(DirectionGraph &graph, int v)
 {
+    assert(v >= 0 && v < m_vMarked.size());
     m_queuePre.push(v);
     
     m_vMarked[v] = true;
     for (int i = 0; i < graph.Adjacent(v).size(); ++i)
     {
         int w = graph.Adjacent(v)[i];
-        Dfs(graph, w);
+        if (!m_vMarked[w])
+        {
+            Dfs(graph, w);
+        }
     }
     
     m_queuePost.push(v);
