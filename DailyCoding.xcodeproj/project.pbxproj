@@ -24,6 +24,7 @@
 		AF0A07AC1DF5B270004C4D90 /* UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07AB1DF5B270004C4D90 /* UnitTest.cpp */; };
 		AF0A07AF1DF99974004C4D90 /* DepthFirstOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07AD1DF99974004C4D90 /* DepthFirstOrder.cpp */; };
 		AF0A07B21DF99E8C004C4D90 /* Topological.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07B01DF99E8C004C4D90 /* Topological.cpp */; };
+		AF0A07B51DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07B31DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp */; };
 		AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E58091DDCA37C001740C6 /* Paths.cpp */; };
 		AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */; };
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
@@ -84,6 +85,8 @@
 		AF0A07AE1DF99974004C4D90 /* DepthFirstOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthFirstOrder.h; sourceTree = "<group>"; };
 		AF0A07B01DF99E8C004C4D90 /* Topological.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Topological.cpp; sourceTree = "<group>"; };
 		AF0A07B11DF99E8C004C4D90 /* Topological.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topological.h; sourceTree = "<group>"; };
+		AF0A07B31DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SolidConnectionDirectionGraph.cpp; sourceTree = "<group>"; };
+		AF0A07B41DF9A673004C4D90 /* SolidConnectionDirectionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolidConnectionDirectionGraph.h; sourceTree = "<group>"; };
 		AF0E58091DDCA37C001740C6 /* Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paths.cpp; sourceTree = "<group>"; };
 		AF0E580A1DDCA37C001740C6 /* Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
 		AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstPaths.cpp; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 		AF420A091DBE51F800072FB6 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				AF0A07B31DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp */,
+				AF0A07B41DF9A673004C4D90 /* SolidConnectionDirectionGraph.h */,
 				AF0A07B01DF99E8C004C4D90 /* Topological.cpp */,
 				AF0A07B11DF99E8C004C4D90 /* Topological.h */,
 				AF0A07AD1DF99974004C4D90 /* DepthFirstOrder.cpp */,
@@ -293,6 +298,7 @@
 				AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */,
 				AF0A07811DEDC68D004C4D90 /* Connect.cpp in Sources */,
 				AF0A07921DEF146D004C4D90 /* DirectionGraph.cpp in Sources */,
+				AF0A07B51DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp in Sources */,
 				AF0A07951DF3B565004C4D90 /* TestDirectionGraph.cpp in Sources */,
 				AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */,
 				AF0A077B1DED9C7B004C4D90 /* TestGraph.cpp in Sources */,
