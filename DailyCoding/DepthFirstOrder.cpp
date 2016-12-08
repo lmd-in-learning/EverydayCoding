@@ -33,7 +33,7 @@ void DepthFirstOrder::Dfs(DirectionGraph &graph, int v)
     for (int i = 0; i < graph.Adjacent(v).size(); ++i)
     {
         int w = graph.Adjacent(v)[i];
-        Dfs(graph, v);
+        Dfs(graph, w);
     }
     
     m_queuePost.push(v);
