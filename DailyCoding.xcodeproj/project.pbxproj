@@ -124,6 +124,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0A07B61DFBAAAE004C4D90 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				AF420A161DC4D68F00072FB6 /* Graph.cpp */,
+				AF420A171DC4D68F00072FB6 /* Graph.h */,
+				AFAB1D081DD8ADDE00910B00 /* DepthFirstSearch.cpp */,
+				AFAB1D091DD8ADDE00910B00 /* DepthFirstSearch.h */,
+				AF0E58091DDCA37C001740C6 /* Paths.cpp */,
+				AF0E580A1DDCA37C001740C6 /* Paths.h */,
+				AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */,
+				AF0E580D1DDCA524001740C6 /* DepthFirstPaths.h */,
+				AF0A07731DE5DEE1004C4D90 /* BreadthFirstPaths.cpp */,
+				AF0A07741DE5DEE1004C4D90 /* BreadthFirstPaths.h */,
+				AF0A077F1DEDC68D004C4D90 /* Connect.cpp */,
+				AF0A07801DEDC68D004C4D90 /* Connect.h */,
+				AF0A07861DEF058B004C4D90 /* CycleGraph.cpp */,
+				AF0A07871DEF058B004C4D90 /* CycleGraph.h */,
+				AF0A078D1DEF0DF3004C4D90 /* TwoColorGraph.cpp */,
+				AF0A078E1DEF0DF3004C4D90 /* TwoColorGraph.h */,
+				AF0A07901DEF146D004C4D90 /* DirectionGraph.cpp */,
+				AF0A07911DEF146D004C4D90 /* DirectionGraph.h */,
+				AF0A07A21DF59E81004C4D90 /* DirectedDFS.cpp */,
+				AF0A07A31DF59E81004C4D90 /* DirectedDFS.h */,
+				AF0A07A51DF5A631004C4D90 /* DirectedCycle.cpp */,
+				AF0A07A61DF5A631004C4D90 /* DirectedCycle.h */,
+				AF0A07B31DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp */,
+				AF0A07B41DF9A673004C4D90 /* SolidConnectionDirectionGraph.h */,
+				AF0A07B01DF99E8C004C4D90 /* Topological.cpp */,
+				AF0A07B11DF99E8C004C4D90 /* Topological.h */,
+				AF0A07AD1DF99974004C4D90 /* DepthFirstOrder.cpp */,
+				AF0A07AE1DF99974004C4D90 /* DepthFirstOrder.h */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
 		AF4209F51DBE506C00072FB6 = {
 			isa = PBXGroup;
 			children = (
@@ -153,39 +188,12 @@
 		AF420A091DBE51F800072FB6 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				AF0A07B31DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp */,
-				AF0A07B41DF9A673004C4D90 /* SolidConnectionDirectionGraph.h */,
-				AF0A07B01DF99E8C004C4D90 /* Topological.cpp */,
-				AF0A07B11DF99E8C004C4D90 /* Topological.h */,
-				AF0A07AD1DF99974004C4D90 /* DepthFirstOrder.cpp */,
-				AF0A07AE1DF99974004C4D90 /* DepthFirstOrder.h */,
+				AF0A07B61DFBAAAE004C4D90 /* Graph */,
 				AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */,
 				AF420A0B1DBE529600072FB6 /* ArrayInt.h */,
 				AF420A0C1DBE529600072FB6 /* BinaryTree.cpp */,
 				AF420A0D1DBE529600072FB6 /* BinaryTree.h */,
 				AF420A0F1DBE529600072FB6 /* Node.h */,
-				AF420A161DC4D68F00072FB6 /* Graph.cpp */,
-				AF420A171DC4D68F00072FB6 /* Graph.h */,
-				AFAB1D081DD8ADDE00910B00 /* DepthFirstSearch.cpp */,
-				AFAB1D091DD8ADDE00910B00 /* DepthFirstSearch.h */,
-				AF0E58091DDCA37C001740C6 /* Paths.cpp */,
-				AF0E580A1DDCA37C001740C6 /* Paths.h */,
-				AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */,
-				AF0E580D1DDCA524001740C6 /* DepthFirstPaths.h */,
-				AF0A07731DE5DEE1004C4D90 /* BreadthFirstPaths.cpp */,
-				AF0A07741DE5DEE1004C4D90 /* BreadthFirstPaths.h */,
-				AF0A077F1DEDC68D004C4D90 /* Connect.cpp */,
-				AF0A07801DEDC68D004C4D90 /* Connect.h */,
-				AF0A07861DEF058B004C4D90 /* CycleGraph.cpp */,
-				AF0A07871DEF058B004C4D90 /* CycleGraph.h */,
-				AF0A078D1DEF0DF3004C4D90 /* TwoColorGraph.cpp */,
-				AF0A078E1DEF0DF3004C4D90 /* TwoColorGraph.h */,
-				AF0A07901DEF146D004C4D90 /* DirectionGraph.cpp */,
-				AF0A07911DEF146D004C4D90 /* DirectionGraph.h */,
-				AF0A07A21DF59E81004C4D90 /* DirectedDFS.cpp */,
-				AF0A07A31DF59E81004C4D90 /* DirectedDFS.h */,
-				AF0A07A51DF5A631004C4D90 /* DirectedCycle.cpp */,
-				AF0A07A61DF5A631004C4D90 /* DirectedCycle.h */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
