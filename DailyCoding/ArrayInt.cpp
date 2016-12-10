@@ -114,6 +114,14 @@ int& ArrayInt::operator[](int nIndex)
     return m_pArray[nIndex];
 }
 
+int ArrayInt::operator[](int nIndex) const
+{
+    assert(nIndex >= 0);
+    assert(nIndex < m_nSize);
+    
+    return m_pArray[nIndex];
+}
+
 void ArrayInt::Inflate(int nIncrease)
 {
     assert(nIncrease > 0);

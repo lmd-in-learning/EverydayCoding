@@ -20,6 +20,7 @@ void TestArrayInt::RunTests()
     TestRemove();
     TestIsEmpty();
     TestOperator();
+    TestOperatorConst();
     TestClear();
     TestCopyConstructor();
     TestAssignment();
@@ -93,9 +94,25 @@ void TestArrayInt::TestOperator()
     test.Push(2);
     test.Push(3);
     
-    test[0] = 5;
+    int& num = test[0];
+    num = 5;
     
     assert(test[0] == 5);
+    assert(test[1] == 2);
+    assert(test[2] == 3);
+}
+
+void TestArrayInt::TestOperatorConst()
+{
+    ArrayInt test(3);
+    
+    test.Push(1);
+    test.Push(2);
+    test.Push(3);
+    
+    int num = test[0];
+    num = 5;
+    assert(test[0] == 1);
     assert(test[1] == 2);
     assert(test[2] == 3);
 }

@@ -28,6 +28,8 @@ public:
     
     void TestOperator();
     
+    void TestOperatorConst();
+    
     void TestClear();
     
     void TestCopyConstructor();
