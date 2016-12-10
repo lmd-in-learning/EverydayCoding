@@ -33,7 +33,8 @@ MaxPQ::~MaxPQ()
 
 void MaxPQ::Insert(int v)
 {
-    m_PQ[++m_nSize] = v;
+    m_PQ.Insert(++m_nSize, v);
+//    m_PQ[++m_nSize] = v;
     Swim(m_nSize);
 }
 
@@ -70,8 +71,8 @@ bool MaxPQ::Less(int i, int j) const
 
 void MaxPQ::Exch(int i, int j)
 {
-    assert(i >= 0 && i <= m_nSize);
-    assert(j >= 0 && j <= m_nSize);
+    assert(i >= 0);
+    assert(j >= 0);
     int tmp = m_PQ[i];
     m_PQ[i] = m_PQ[j];
     m_PQ[j] = tmp;
@@ -79,7 +80,7 @@ void MaxPQ::Exch(int i, int j)
 
 void MaxPQ::Swim(int k)
 {
-    assert(k >= 0 && k <= m_nSize);
+    assert(k >= 0);
     while (k > 1 && Less(k/2, k))
     {
         Exch(k, k/2);
@@ -89,7 +90,7 @@ void MaxPQ::Swim(int k)
 
 void MaxPQ::Sink(int k)
 {
-    assert(k >= 0 && k <= m_nSize);
+    assert(k >= 0);
     while (2 * k <= m_nSize)
     {
         int j = 2 * k;
