@@ -25,6 +25,9 @@
 		AF0A07AF1DF99974004C4D90 /* DepthFirstOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07AD1DF99974004C4D90 /* DepthFirstOrder.cpp */; };
 		AF0A07B21DF99E8C004C4D90 /* Topological.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07B01DF99E8C004C4D90 /* Topological.cpp */; };
 		AF0A07B51DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07B31DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp */; };
+		AF0A07BA1DFBAB41004C4D90 /* MaxPQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07B81DFBAB41004C4D90 /* MaxPQ.cpp */; };
+		AF0A07BE1DFBB251004C4D90 /* Uncopyable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07BC1DFBB251004C4D90 /* Uncopyable.cpp */; };
+		AF0A07C11DFBBF9E004C4D90 /* TestMaxPQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07BF1DFBBF9E004C4D90 /* TestMaxPQ.cpp */; };
 		AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E58091DDCA37C001740C6 /* Paths.cpp */; };
 		AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */; };
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
@@ -87,6 +90,12 @@
 		AF0A07B11DF99E8C004C4D90 /* Topological.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topological.h; sourceTree = "<group>"; };
 		AF0A07B31DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SolidConnectionDirectionGraph.cpp; sourceTree = "<group>"; };
 		AF0A07B41DF9A673004C4D90 /* SolidConnectionDirectionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolidConnectionDirectionGraph.h; sourceTree = "<group>"; };
+		AF0A07B81DFBAB41004C4D90 /* MaxPQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaxPQ.cpp; sourceTree = "<group>"; };
+		AF0A07B91DFBAB41004C4D90 /* MaxPQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxPQ.h; sourceTree = "<group>"; };
+		AF0A07BC1DFBB251004C4D90 /* Uncopyable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Uncopyable.cpp; sourceTree = "<group>"; };
+		AF0A07BD1DFBB251004C4D90 /* Uncopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uncopyable.h; sourceTree = "<group>"; };
+		AF0A07BF1DFBBF9E004C4D90 /* TestMaxPQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestMaxPQ.cpp; sourceTree = "<group>"; };
+		AF0A07C01DFBBF9E004C4D90 /* TestMaxPQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMaxPQ.h; sourceTree = "<group>"; };
 		AF0E58091DDCA37C001740C6 /* Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paths.cpp; sourceTree = "<group>"; };
 		AF0E580A1DDCA37C001740C6 /* Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
 		AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstPaths.cpp; sourceTree = "<group>"; };
@@ -159,6 +168,125 @@
 			name = Graph;
 			sourceTree = "<group>";
 		};
+		AF0A07B71DFBAB12004C4D90 /* Heaps */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A07B81DFBAB41004C4D90 /* MaxPQ.cpp */,
+				AF0A07B91DFBAB41004C4D90 /* MaxPQ.h */,
+			);
+			name = Heaps;
+			sourceTree = "<group>";
+		};
+		AF0A07BB1DFBB233004C4D90 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A07BC1DFBB251004C4D90 /* Uncopyable.cpp */,
+				AF0A07BD1DFBB251004C4D90 /* Uncopyable.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		AF0A07C21DFBBFD4004C4D90 /* GraphUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A07CC1DFBC1CA004C4D90 /* DirectedGraph */,
+				AF0A07CB1DFBC174004C4D90 /* Graph */,
+			);
+			name = GraphUnitTest;
+			sourceTree = "<group>";
+		};
+		AF0A07C31DFBC00B004C4D90 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A07971DF3B75D004C4D90 /* UnitTest.h */,
+				AF0A07AB1DF5B270004C4D90 /* UnitTest.cpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		AF0A07C41DFBC023004C4D90 /* TreeUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */,
+				AF420A1A1DC4E77700072FB6 /* TestBinaryTree.h */,
+			);
+			name = TreeUnitTest;
+			sourceTree = "<group>";
+		};
+		AF0A07C51DFBC041004C4D90 /* SortUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE8C571DC63733002C7EDF /* TestSortAlgorithms.cpp */,
+				AFEE8C581DC63733002C7EDF /* TestSortAlgorithms.h */,
+			);
+			name = SortUnitTest;
+			sourceTree = "<group>";
+		};
+		AF0A07C61DFBC073004C4D90 /* ArrayUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				AF420A101DBE529600072FB6 /* TestArrayInt.cpp */,
+				AF420A111DBE529600072FB6 /* TestArrayInt.h */,
+			);
+			name = ArrayUnitTest;
+			sourceTree = "<group>";
+		};
+		AF0A07C81DFBC0F9004C4D90 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */,
+				AF420A0B1DBE529600072FB6 /* ArrayInt.h */,
+			);
+			name = Array;
+			sourceTree = "<group>";
+		};
+		AF0A07C91DFBC10E004C4D90 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				AF420A0C1DBE529600072FB6 /* BinaryTree.cpp */,
+				AF420A0D1DBE529600072FB6 /* BinaryTree.h */,
+				AF420A0F1DBE529600072FB6 /* Node.h */,
+			);
+			name = Tree;
+			sourceTree = "<group>";
+		};
+		AF0A07CA1DFBC143004C4D90 /* HeapUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A07BF1DFBBF9E004C4D90 /* TestMaxPQ.cpp */,
+				AF0A07C01DFBBF9E004C4D90 /* TestMaxPQ.h */,
+			);
+			name = HeapUnitTest;
+			sourceTree = "<group>";
+		};
+		AF0A07CB1DFBC174004C4D90 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A07891DEF08E4004C4D90 /* TestCycleGraph.cpp */,
+				AF0A078A1DEF08E4004C4D90 /* TestCycleGraph.h */,
+				AF0A077C1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp */,
+				AF0A077D1DEDB5DF004C4D90 /* TestDepthFirstPaths.h */,
+				AF0A07821DEDCC86004C4D90 /* TestConnect.cpp */,
+				AF0A07831DEDCC86004C4D90 /* TestConnect.h */,
+				AF0A07761DED9AD5004C4D90 /* TestBreadFirstPaths.cpp */,
+				AF0A07771DED9AD5004C4D90 /* TestBreadFirstPaths.h */,
+				AF0A07791DED9C7B004C4D90 /* TestGraph.cpp */,
+				AF0A077A1DED9C7B004C4D90 /* TestGraph.h */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		AF0A07CC1DFBC1CA004C4D90 /* DirectedGraph */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A07931DF3B565004C4D90 /* TestDirectionGraph.cpp */,
+				AF0A07941DF3B565004C4D90 /* TestDirectionGraph.h */,
+				AF0A07A81DF5ACC0004C4D90 /* TestDirectedCycle.cpp */,
+				AF0A07A91DF5ACC0004C4D90 /* TestDirectedCycle.h */,
+			);
+			name = DirectedGraph;
+			sourceTree = "<group>";
+		};
 		AF4209F51DBE506C00072FB6 = {
 			isa = PBXGroup;
 			children = (
@@ -188,12 +316,11 @@
 		AF420A091DBE51F800072FB6 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				AF0A07BB1DFBB233004C4D90 /* Common */,
+				AF0A07B71DFBAB12004C4D90 /* Heaps */,
 				AF0A07B61DFBAAAE004C4D90 /* Graph */,
-				AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */,
-				AF420A0B1DBE529600072FB6 /* ArrayInt.h */,
-				AF420A0C1DBE529600072FB6 /* BinaryTree.cpp */,
-				AF420A0D1DBE529600072FB6 /* BinaryTree.h */,
-				AF420A0F1DBE529600072FB6 /* Node.h */,
+				AF0A07C81DFBC0F9004C4D90 /* Array */,
+				AF0A07C91DFBC10E004C4D90 /* Tree */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -201,28 +328,12 @@
 		AFAB1D071DD8AC8D00910B00 /* UnitTest */ = {
 			isa = PBXGroup;
 			children = (
-				AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */,
-				AF420A1A1DC4E77700072FB6 /* TestBinaryTree.h */,
-				AFEE8C571DC63733002C7EDF /* TestSortAlgorithms.cpp */,
-				AFEE8C581DC63733002C7EDF /* TestSortAlgorithms.h */,
-				AF420A101DBE529600072FB6 /* TestArrayInt.cpp */,
-				AF420A111DBE529600072FB6 /* TestArrayInt.h */,
-				AF0A07761DED9AD5004C4D90 /* TestBreadFirstPaths.cpp */,
-				AF0A07771DED9AD5004C4D90 /* TestBreadFirstPaths.h */,
-				AF0A07791DED9C7B004C4D90 /* TestGraph.cpp */,
-				AF0A077A1DED9C7B004C4D90 /* TestGraph.h */,
-				AF0A077C1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp */,
-				AF0A077D1DEDB5DF004C4D90 /* TestDepthFirstPaths.h */,
-				AF0A07821DEDCC86004C4D90 /* TestConnect.cpp */,
-				AF0A07831DEDCC86004C4D90 /* TestConnect.h */,
-				AF0A07891DEF08E4004C4D90 /* TestCycleGraph.cpp */,
-				AF0A078A1DEF08E4004C4D90 /* TestCycleGraph.h */,
-				AF0A07931DF3B565004C4D90 /* TestDirectionGraph.cpp */,
-				AF0A07941DF3B565004C4D90 /* TestDirectionGraph.h */,
-				AF0A07971DF3B75D004C4D90 /* UnitTest.h */,
-				AF0A07AB1DF5B270004C4D90 /* UnitTest.cpp */,
-				AF0A07A81DF5ACC0004C4D90 /* TestDirectedCycle.cpp */,
-				AF0A07A91DF5ACC0004C4D90 /* TestDirectedCycle.h */,
+				AF0A07CA1DFBC143004C4D90 /* HeapUnitTest */,
+				AF0A07C31DFBC00B004C4D90 /* Common */,
+				AF0A07C61DFBC073004C4D90 /* ArrayUnitTest */,
+				AF0A07C41DFBC023004C4D90 /* TreeUnitTest */,
+				AF0A07C21DFBBFD4004C4D90 /* GraphUnitTest */,
+				AF0A07C51DFBC041004C4D90 /* SortUnitTest */,
 			);
 			name = UnitTest;
 			sourceTree = "<group>";
@@ -302,8 +413,11 @@
 				AF0A077E1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp in Sources */,
 				AFEE8C591DC63733002C7EDF /* TestSortAlgorithms.cpp in Sources */,
 				AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */,
+				AF0A07C11DFBBF9E004C4D90 /* TestMaxPQ.cpp in Sources */,
+				AF0A07BE1DFBB251004C4D90 /* Uncopyable.cpp in Sources */,
 				AF0A07B21DF99E8C004C4D90 /* Topological.cpp in Sources */,
 				AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */,
+				AF0A07BA1DFBAB41004C4D90 /* MaxPQ.cpp in Sources */,
 				AF0A07811DEDC68D004C4D90 /* Connect.cpp in Sources */,
 				AF0A07921DEF146D004C4D90 /* DirectionGraph.cpp in Sources */,
 				AF0A07B51DF9A673004C4D90 /* SolidConnectionDirectionGraph.cpp in Sources */,
