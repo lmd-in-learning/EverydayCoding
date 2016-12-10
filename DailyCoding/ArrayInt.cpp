@@ -71,8 +71,7 @@ void ArrayInt::Push(int nItem)
 
 void ArrayInt::Insert(int nIndex, int nItem)
 {
-    assert(nIndex >= 0);
-    assert(nIndex < m_nSize);
+    assert(nIndex >= 0 && nIndex < m_nCapacity);
 
     CheckIsFull();
     
@@ -108,16 +107,14 @@ bool ArrayInt::IsEmpty()
 
 int& ArrayInt::operator[](int nIndex)
 {
-    assert(nIndex >= 0);
-    assert(nIndex < m_nSize);
+    assert(nIndex >= 0 && nIndex < m_nCapacity);
     
     return m_pArray[nIndex];
 }
 
 int ArrayInt::operator[](int nIndex) const
 {
-    assert(nIndex >= 0);
-    assert(nIndex < m_nSize);
+    assert(nIndex >= 0 && nIndex < m_nCapacity);
     
     return m_pArray[nIndex];
 }
