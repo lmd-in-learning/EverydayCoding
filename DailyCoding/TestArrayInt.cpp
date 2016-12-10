@@ -144,13 +144,13 @@ void TestArrayInt::TestAssignment()
     assert(assignTest[2] = test[2]);
 }
 //test main
-//int main()
-//{
-//    TestArrayInt runTest;
-//    runTest.RunTests();
-//    
-//    return 0;
-//}
+int main()
+{
+    TestArrayInt runTest;
+    runTest.RunTests();
+    
+    return 0;
+}
 
 
 

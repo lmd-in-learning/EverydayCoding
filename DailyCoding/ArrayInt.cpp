@@ -23,6 +23,7 @@ m_nSize(0),
 m_nCapacity(10)
 {
     m_pArray = new int[10];
+    memset(m_pArray, 0, 10 * sizeof(int));
 }
 
 ArrayInt::ArrayInt(const ArrayInt& array)
@@ -50,7 +51,11 @@ ArrayInt& ArrayInt::operator=(const ArrayInt &array)
 
 ArrayInt::~ArrayInt()
 {
-    delete []m_pArray;
+    if (NULL != m_pArray)
+    {
+        delete[] m_pArray;
+        m_pArray = NULL;
+    }
 }
 
 int ArrayInt::GetSize() const
@@ -113,8 +118,8 @@ void ArrayInt::Inflate(int nIncrease)
 {
     assert(nIncrease > 0);
     int *pTmp = new int[m_nCapacity + nIncrease];
-    memset(pTmp, 0, m_nCapacity + nIncrease*sizeof(int));
-    memcpy(pTmp, m_pArray, m_nCapacity*sizeof(int));
+    memset(pTmp, 0, (m_nCapacity + nIncrease) * sizeof(int));
+    memcpy(pTmp, m_pArray, m_nCapacity * sizeof(int));
     m_nCapacity += nIncrease;
     
     delete []m_pArray;

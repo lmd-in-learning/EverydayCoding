@@ -91,12 +91,12 @@ char* TestDirectedCycle::TestCycle()
 }
 
 //test main
-int main()
-{
-    TestDirectedCycle testDirectedCycle;
-    mu_run_test(testDirectedCycle.Tests);
-    return 0;
-}
+//int main()
+//{
+//    TestDirectedCycle testDirectedCycle;
+//    mu_run_test(testDirectedCycle.Tests);
+//    return 0;
+//}
 
 
 
