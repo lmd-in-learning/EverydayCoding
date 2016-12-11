@@ -28,9 +28,9 @@ TestMinPQ::~TestMinPQ()
 void TestMinPQ::PrepareData()
 {
     m_pMinPQ = new MinPQ(10);
-    m_pMinPQ->Insert(1);
     m_pMinPQ->Insert(2);
     m_pMinPQ->Insert(3);
+    m_pMinPQ->Insert(1);
     m_pMinPQ->Insert(4);
     m_pMinPQ->Insert(5);
 }
@@ -109,10 +109,10 @@ char* TestMinPQ::TestSize()
     return NULL;
 }
 
-//test main
-int main()
-{
-    TestMinPQ MinPQTest;
-    mu_run_test(MinPQTest.Tests);
-    return 0;
-}
+////test main
+//int main()
+//{
+//    TestMinPQ MinPQTest;
+//    mu_run_test(MinPQTest.Tests);
+//    return 0;
+//}
