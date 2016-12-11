@@ -31,8 +31,8 @@ public:
     //return the size of pq
     int Size() const;
     
-    //return true if pq[k] exists
-    bool Contains(int k) const;
+    //return true if pq[k] exists, the index k has val
+    bool Contains(int index) const;
     
     //insert a element pq[k] = val
     void Insert(int k, int val);
@@ -68,6 +68,8 @@ private:
     
     //sink for orderlize the queue
     void Sink(int k);
+    
+    void ArrayIntToString(const ArrayInt& array) const;
     
     //private members
 private:

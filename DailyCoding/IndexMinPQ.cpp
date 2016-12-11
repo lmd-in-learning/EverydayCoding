@@ -9,6 +9,7 @@
 #include <assert.h>
 #include <stdlib.h>
 #include "IndexMinPQ.h"
+#include "OutputString.h"
 
 IndexMinPQ::IndexMinPQ():
 m_PQ(),
@@ -33,15 +34,20 @@ m_nMaxN(maxN)
     }
 }
 
+IndexMinPQ::~IndexMinPQ()
+{
+    
+}
+
 bool IndexMinPQ::IsEmpty() const
 {
     return m_nSize == 0;
 }
 
-bool IndexMinPQ::Contains(int k) const
+bool IndexMinPQ::Contains(int index) const
 {
-    assert(k >= 0 && k < m_nMaxN);
-    return m_QP[k] != -1;
+    assert(index >= 0 && index < m_nMaxN);
+    return m_QP[index] != -1;
 }
 
 int IndexMinPQ::Size() const
@@ -54,9 +60,9 @@ void IndexMinPQ::Insert(int k, int val)
     assert(k >= 0 && k < m_nMaxN);
     
     m_nSize++;
-    m_QP[k] = m_nSize;
-    m_PQ[m_nSize] = k;
-    m_keys[k] = val;
+    m_QP.Insert(k, m_nSize);
+    m_PQ.Insert(m_nSize, k);
+    m_keys.Insert(k, val);
     Swim(m_nSize);
 }
 
@@ -83,6 +89,9 @@ void IndexMinPQ::Delete(int k)
 int IndexMinPQ::Min() const
 {
     assert(m_nSize > 0);
+//    ArrayIntToString(m_keys);
+//    ArrayIntToString(m_PQ);
+//    ArrayIntToString(m_QP);
     return m_keys[m_PQ[1]];
 }
 
@@ -99,7 +108,7 @@ int IndexMinPQ::DelMin()
     Exch(1, m_nSize--);
     Sink(1);
     m_keys[m_PQ[m_nSize + 1]] = NULL;
-    m_QP[m_QP[m_nSize + 1]] = -1;
+    m_QP[m_PQ[m_nSize + 1]] = -1;
     return indexOfMin;
 }
 
@@ -114,7 +123,7 @@ bool IndexMinPQ::Greater(int i, int j) const
 {
     assert(i >= 0 && i <= m_nMaxN);
     assert(j >= 0 && j <= m_nMaxN);
-    return m_PQ[i] > m_PQ[j];
+    return m_keys[m_PQ[i]] > m_keys[m_PQ[j]];
 }
 
 void IndexMinPQ::Exch(int i, int j)
@@ -154,6 +163,14 @@ void IndexMinPQ::Sink(int k)
         }
         Exch(k, j);
         k = j;
+    }
+}
+
+void IndexMinPQ::ArrayIntToString(const ArrayInt& array) const
+{
+    for (int i = 0; i < array.GetSize(); ++i)
+    {
+        fprintf(stdout, "a[%d] = %d\n", i, array[i]);
     }
 }
 
