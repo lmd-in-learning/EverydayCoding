@@ -31,6 +31,8 @@
 		AF0A07CF1DFD10F6004C4D90 /* MinPQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07CD1DFD10F6004C4D90 /* MinPQ.cpp */; };
 		AF0A07D21DFD129E004C4D90 /* TestMinPQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07D01DFD129E004C4D90 /* TestMinPQ.cpp */; };
 		AF0A07D51DFD1572004C4D90 /* IndexMinPQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07D31DFD1572004C4D90 /* IndexMinPQ.cpp */; };
+		AF0A07D81DFD2370004C4D90 /* TestIndexMinPQ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07D61DFD2370004C4D90 /* TestIndexMinPQ.cpp */; };
+		AF0A07DB1DFD2EF6004C4D90 /* OutputString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0A07D91DFD2EF6004C4D90 /* OutputString.cpp */; };
 		AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E58091DDCA37C001740C6 /* Paths.cpp */; };
 		AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */; };
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
@@ -105,6 +107,10 @@
 		AF0A07D11DFD129E004C4D90 /* TestMinPQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMinPQ.h; sourceTree = "<group>"; };
 		AF0A07D31DFD1572004C4D90 /* IndexMinPQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IndexMinPQ.cpp; sourceTree = "<group>"; };
 		AF0A07D41DFD1572004C4D90 /* IndexMinPQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexMinPQ.h; sourceTree = "<group>"; };
+		AF0A07D61DFD2370004C4D90 /* TestIndexMinPQ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestIndexMinPQ.cpp; sourceTree = "<group>"; };
+		AF0A07D71DFD2370004C4D90 /* TestIndexMinPQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestIndexMinPQ.h; sourceTree = "<group>"; };
+		AF0A07D91DFD2EF6004C4D90 /* OutputString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutputString.cpp; sourceTree = "<group>"; };
+		AF0A07DA1DFD2EF6004C4D90 /* OutputString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputString.h; sourceTree = "<group>"; };
 		AF0E58091DDCA37C001740C6 /* Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paths.cpp; sourceTree = "<group>"; };
 		AF0E580A1DDCA37C001740C6 /* Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
 		AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepthFirstPaths.cpp; sourceTree = "<group>"; };
@@ -213,6 +219,8 @@
 			children = (
 				AF0A07971DF3B75D004C4D90 /* UnitTest.h */,
 				AF0A07AB1DF5B270004C4D90 /* UnitTest.cpp */,
+				AF0A07D91DFD2EF6004C4D90 /* OutputString.cpp */,
+				AF0A07DA1DFD2EF6004C4D90 /* OutputString.h */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -270,6 +278,8 @@
 				AF0A07C01DFBBF9E004C4D90 /* TestMaxPQ.h */,
 				AF0A07D01DFD129E004C4D90 /* TestMinPQ.cpp */,
 				AF0A07D11DFD129E004C4D90 /* TestMinPQ.h */,
+				AF0A07D61DFD2370004C4D90 /* TestIndexMinPQ.cpp */,
+				AF0A07D71DFD2370004C4D90 /* TestIndexMinPQ.h */,
 			);
 			name = HeapUnitTest;
 			sourceTree = "<group>";
@@ -427,7 +437,9 @@
 				AF0A07751DE5DEE1004C4D90 /* BreadthFirstPaths.cpp in Sources */,
 				AFEE8C501DC62392002C7EDF /* BaseSort.cpp in Sources */,
 				AF0A077E1DEDB5DF004C4D90 /* TestDepthFirstPaths.cpp in Sources */,
+				AF0A07D81DFD2370004C4D90 /* TestIndexMinPQ.cpp in Sources */,
 				AFEE8C591DC63733002C7EDF /* TestSortAlgorithms.cpp in Sources */,
+				AF0A07DB1DFD2EF6004C4D90 /* OutputString.cpp in Sources */,
 				AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */,
 				AF0A07C11DFBBF9E004C4D90 /* TestMaxPQ.cpp in Sources */,
 				AF0A07BE1DFBB251004C4D90 /* Uncopyable.cpp in Sources */,
