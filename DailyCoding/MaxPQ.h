@@ -63,5 +63,8 @@ private:
     //the size of the queue
     int m_nSize;
     
+    // maximum number of elements on PQ
+    int m_nMaxN;
+    
 };
 #endif /* MaxPQ_hpp */

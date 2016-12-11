@@ -12,6 +12,7 @@
 
 MinPQ::MinPQ():
 m_nSize(0),
+m_nMaxN(0),
 m_PQ(ArrayInt())
 {
     
@@ -19,6 +20,7 @@ m_PQ(ArrayInt())
 
 MinPQ::MinPQ(int max):
 m_nSize(0),
+m_nMaxN(max),
 m_PQ(ArrayInt(max))
 {
     
@@ -37,11 +39,13 @@ void MinPQ::Insert(int v)
 
 int MinPQ::Min() const
 {
+    assert(m_nSize > 0);
     return m_PQ[1];
 }
 
 int MinPQ::DelMin()
 {
+    assert(m_nSize > 0);
     int max = m_PQ[1];
     Exch(1, m_nSize--);
     m_PQ[m_nSize + 1] = NULL;
@@ -61,15 +65,15 @@ int MinPQ::Size() const
 
 bool MinPQ::Less(int i, int j) const
 {
-    assert(i >= 0 && i <= m_nSize);
-    assert(j >= 0 && j <= m_nSize);
+    assert(i >= 0 && i <= m_nMaxN);
+    assert(j >= 0 && j <= m_nMaxN);
     return m_PQ[i] < m_PQ[j];
 }
 
 bool MinPQ::Greater(int i, int j) const
 {
-    assert(i >= 0 && i <= m_nSize);
-    assert(j >= 0 && j <= m_nSize);
+    assert(i >= 0 && i <= m_nMaxN);
+    assert(j >= 0 && j <= m_nMaxN);
     return m_PQ[i] > m_PQ[j];
 }
 

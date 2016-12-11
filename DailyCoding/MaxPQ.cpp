@@ -13,6 +13,7 @@
 
 MaxPQ::MaxPQ():
 m_nSize(0),
+m_nMaxN(0),
 m_PQ(ArrayInt())
 {
     
@@ -20,6 +21,7 @@ m_PQ(ArrayInt())
 
 MaxPQ::MaxPQ(int max):
 m_nSize(0),
+m_nMaxN(0),
 m_PQ(ArrayInt(max))
 {
     
@@ -33,17 +35,18 @@ MaxPQ::~MaxPQ()
 void MaxPQ::Insert(int v)
 {
     m_PQ.Insert(++m_nSize, v);
-//    m_PQ[++m_nSize] = v;
     Swim(m_nSize);
 }
 
 int MaxPQ::Max() const
 {
+    assert(m_nSize > 0);
     return m_PQ[1];
 }
 
 int MaxPQ::DelMax()
 {
+    assert(m_nSize > 0);
     int max = m_PQ[1];
     Exch(1, m_nSize--);
     m_PQ[m_nSize + 1] = NULL;
@@ -63,8 +66,8 @@ int MaxPQ::Size() const
 
 bool MaxPQ::Less(int i, int j) const
 {
-    assert(i >= 0 && i <= m_nSize);
-    assert(j >= 0 && j <= m_nSize);
+    assert(i >= 0 && i <= m_nMaxN);
+    assert(j >= 0 && j <= m_nMaxN);
     return m_PQ[i] < m_PQ[j];
 }
 
