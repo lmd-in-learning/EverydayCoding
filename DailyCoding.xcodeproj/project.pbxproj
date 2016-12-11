@@ -168,13 +168,13 @@
 			name = Graph;
 			sourceTree = "<group>";
 		};
-		AF0A07B71DFBAB12004C4D90 /* Heaps */ = {
+		AF0A07B71DFBAB12004C4D90 /* Heap */ = {
 			isa = PBXGroup;
 			children = (
 				AF0A07B81DFBAB41004C4D90 /* MaxPQ.cpp */,
 				AF0A07B91DFBAB41004C4D90 /* MaxPQ.h */,
 			);
-			name = Heaps;
+			name = Heap;
 			sourceTree = "<group>";
 		};
 		AF0A07BB1DFBB233004C4D90 /* Common */ = {
@@ -317,7 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				AF0A07BB1DFBB233004C4D90 /* Common */,
-				AF0A07B71DFBAB12004C4D90 /* Heaps */,
+				AF0A07B71DFBAB12004C4D90 /* Heap */,
 				AF0A07B61DFBAAAE004C4D90 /* Graph */,
 				AF0A07C81DFBC0F9004C4D90 /* Array */,
 				AF0A07C91DFBC10E004C4D90 /* Tree */,

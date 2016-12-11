@@ -33,6 +33,8 @@ public:
     
     void RunQuick3WaySort();
     
+    void RunHeapSort();
+    
 private:
     void PrepareData();
     

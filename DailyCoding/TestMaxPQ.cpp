@@ -110,12 +110,12 @@ char* TestMaxPQ::TestSize()
 }
 
 //test main
-int main()
-{
-    TestMaxPQ MaxPQTest;
-    mu_run_test(MaxPQTest.Tests);
-    return 0;
-}
+//int main()
+//{
+//    TestMaxPQ MaxPQTest;
+//    mu_run_test(MaxPQTest.Tests);
+//    return 0;
+//}
 
 
 

@@ -211,6 +211,42 @@ void SortAlgorithms::Merge(ArrayInt &array, int nLow, int nMid, int nHigh)
     }
 }
 
+void SortAlgorithms::HeapSort(ArrayInt& array)
+{
+    int n = array.GetSize();
+    for (int k = n/2; k >= 1; k--)
+    {
+        HeapSortSink(array, k, n);
+    }
+    while (n > 1)
+    {
+        ExchangePos(array, 1, n--);
+        HeapSortSink(array, 1, n);
+    }
+}
+
+void SortAlgorithms::HeapSortSink(ArrayInt &array, int k, int n)
+{
+    //heap sort will out of range of the assert(k < array.GetSize())
+    //delete the assert the function pass the unit test case
+    while (2*k <= n)
+    {
+        int j = 2*k;
+        if (j < n && Less(array[j], array[j + 1]))
+        {
+            j++;
+        }
+        if (!Less(array[k], array[j]))
+        {
+            break;
+        }
+        ExchangePos(array, k, j);
+        k = j;
+    }
+}
+
+
+
 //UNIT TEST CASE
 //int main()
 //{

@@ -44,6 +44,7 @@ void TestSortAlgorithms::RunTests()
     RunShellSort();
     RunQuickSort();
     RunQuick3WaySort();
+    RunHeapSort();
 }
 
 void TestSortAlgorithms::RunSelectSort()
@@ -100,13 +101,22 @@ void TestSortAlgorithms::RunQuick3WaySort()
     DeleteData();
 }
 
+void TestSortAlgorithms::RunHeapSort()
+{
+    PrepareData();
+    SortAlgorithms sort;
+    sort.HeapSort(*m_array);
+    assert(sort.IsSorted(*m_array));
+    DeleteData();
+}
+
 //UNIT TEST CASE
-//int main()
-//{
-//    TestSortAlgorithms test;
-//    test.RunTests();
-//    return 0;
-//}
+int main()
+{
+    TestSortAlgorithms test;
+    test.RunTests();
+    return 0;
+}
 
 
 

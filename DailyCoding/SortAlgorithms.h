@@ -40,6 +40,9 @@ public:
     //quick 3 way sort algorithm
     void Quick3Way(ArrayInt& array);
     
+    //heap sort algorithm
+    void HeapSort(ArrayInt& array);
+    
 private:
     void Merge(ArrayInt& array, int nLow, int nMid, int nHigh);
     
@@ -50,6 +53,8 @@ private:
     int QuickPartition(ArrayInt& array, int nLow, int nHigh);
   
     void Quick3WayRecursion(ArrayInt& array, int nLow, int nHigh);
+    
+    void HeapSortSink(ArrayInt& array, int k, int n);
 };
 
 #endif /* InsertionSort_h */
