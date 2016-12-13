@@ -10,14 +10,15 @@
 #define BinaryTree_h
 #include "Node.h"
 
-
-class BinaryTree {
-    
+class BinaryTree
+{
+    //constructor
 public:
-    //<#member functions#>
     BinaryTree();
     ~BinaryTree();
     
+    //public functions
+public:
     void Insert(int key);
     
     Node* Search(int key) const;
@@ -30,11 +31,8 @@ public:
     
     int GetSize() const;
     
+    //private functions
 private:
-    Node* m_Root;
-    
-    int m_nNodeCounts;
-    
     void Insert(int key, Node* leafNode);
     
     Node* Search(int key, Node* leafNode) const;
@@ -44,6 +42,12 @@ private:
     Node* Min(Node* leafNode) const;
     
     Node* Max(Node* leafNode) const;
+    
+    //private members
+private:
+    Node* m_Root;
+    
+    int m_nNodeCounts;
 };
 
 #endif /* BinaryTree_h */
