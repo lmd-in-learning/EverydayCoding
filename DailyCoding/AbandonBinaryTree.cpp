@@ -1,27 +1,27 @@
 //
-//  BinaryTree.cpp
+//  AbandonBinaryTree.cpp
 //  HelloWorld
 //
 //  Created by limingding on 10/20/16.
 //  Copyright © 2016 limingding. All rights reserved.
 //
 
-#include "BinaryTree.h"
+#include "AbandonBinaryTree.h"
 #include <cstdlib>
 
-BinaryTree::BinaryTree():
+AbandonBinaryTree::AbandonBinaryTree():
 m_Root(NULL),
 m_nNodeCounts(0)
 {
     
 }
 
-BinaryTree::~BinaryTree()
+AbandonBinaryTree::~AbandonBinaryTree()
 {
     DestroyTree();
 }
 
-void BinaryTree::Insert(int key)
+void AbandonBinaryTree::Insert(int key)
 {
     if (NULL != m_Root)
     {
@@ -29,7 +29,7 @@ void BinaryTree::Insert(int key)
     }
     else
     {
-        m_Root = new Node;
+        m_Root = new AbandonNode;
         m_Root->key_value = key;
         m_Root->left = NULL;
         m_Root->right = NULL;
@@ -38,23 +38,23 @@ void BinaryTree::Insert(int key)
     m_nNodeCounts++;
 }
 
-Node* BinaryTree::Search(int key) const
+AbandonNode* AbandonBinaryTree::Search(int key) const
 {
     return Search(key, m_Root);
 }
 
-void BinaryTree::DestroyTree()
+void AbandonBinaryTree::DestroyTree()
 {
     DestroyTree(m_Root);
 }
 
-void BinaryTree::Insert(int key, Node* leafNode)
+void AbandonBinaryTree::Insert(int key, AbandonNode* leafNode)
 {
     if (key < leafNode->key_value)
     {
         if (NULL == leafNode->left)
         {
-            leafNode->left = new Node;
+            leafNode->left = new AbandonNode;
             leafNode->left->key_value = key;
             leafNode->left->left = NULL;
             leafNode->left->right = NULL;
@@ -68,7 +68,7 @@ void BinaryTree::Insert(int key, Node* leafNode)
     {
         if (NULL == leafNode->right)
         {
-            leafNode->right = new Node;
+            leafNode->right = new AbandonNode;
             leafNode->right->key_value = key;
             leafNode->right->left = NULL;
             leafNode->right->right = NULL;
@@ -80,7 +80,7 @@ void BinaryTree::Insert(int key, Node* leafNode)
     }
 }
 
-Node* BinaryTree::Search(int key, Node* leafNode) const
+AbandonNode* AbandonBinaryTree::Search(int key, AbandonNode* leafNode) const
 {
     if (NULL == leafNode)
     {
@@ -103,7 +103,7 @@ Node* BinaryTree::Search(int key, Node* leafNode) const
     return NULL;
 }
 
-void BinaryTree::DestroyTree(Node* leafNode)
+void AbandonBinaryTree::DestroyTree(AbandonNode* leafNode)
 {
     if (NULL != leafNode)
     {
@@ -115,7 +115,7 @@ void BinaryTree::DestroyTree(Node* leafNode)
     m_nNodeCounts = 0;
 }
 
-Node* BinaryTree::GetMinNode() const
+AbandonNode* AbandonBinaryTree::GetMinNode() const
 {
     if (NULL != m_Root)
     {
@@ -125,7 +125,7 @@ Node* BinaryTree::GetMinNode() const
     return NULL;
 }
 
-Node* BinaryTree::Min(Node* leafNode) const
+AbandonNode* AbandonBinaryTree::Min(AbandonNode* leafNode) const
 {
     if (NULL != leafNode)
     {
@@ -141,7 +141,7 @@ Node* BinaryTree::Min(Node* leafNode) const
     return NULL;
 }
 
-Node* BinaryTree::GetMaxNode() const
+AbandonNode* AbandonBinaryTree::GetMaxNode() const
 {
     if (NULL != m_Root)
     {
@@ -151,7 +151,7 @@ Node* BinaryTree::GetMaxNode() const
     return  NULL;
 }
 
-Node* BinaryTree::Max(Node *leafNode) const
+AbandonNode* AbandonBinaryTree::Max(AbandonNode *leafNode) const
 {
     if (NULL != leafNode)
     {
@@ -167,7 +167,7 @@ Node* BinaryTree::Max(Node *leafNode) const
     return NULL;
 }
 
-int BinaryTree::GetSize() const
+int AbandonBinaryTree::GetSize() const
 {
     return m_nNodeCounts;
 }

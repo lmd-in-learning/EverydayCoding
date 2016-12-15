@@ -9,7 +9,7 @@
 #include "TestBinaryTree.h"
 #include <stdlib.h>
 #include <assert.h>
-#include "BinaryTree.h"
+#include "AbandonBinaryTree.h"
 
 void TestBinaryTree::RunTests()
 {
@@ -23,7 +23,7 @@ void TestBinaryTree::RunTests()
 
 void TestBinaryTree::TestInsert()
 {
-    BinaryTree* pTree = new BinaryTree();
+    AbandonBinaryTree* pTree = new AbandonBinaryTree();
     assert(pTree);
     
     pTree->Insert(0);
@@ -36,11 +36,11 @@ void TestBinaryTree::TestInsert()
 
 void TestBinaryTree::TestSearch()
 {
-    BinaryTree* pTree = new BinaryTree();
+    AbandonBinaryTree* pTree = new AbandonBinaryTree();
     assert(pTree);
     
     pTree->Insert(0);
-    Node* pNode = pTree->Search(0);
+    AbandonNode* pNode = pTree->Search(0);
     assert(pNode != NULL);
     assert(pNode->key_value == 0);
     
@@ -55,7 +55,7 @@ void TestBinaryTree::TestSearch()
 
 void TestBinaryTree::TestGetSize()
 {
-    BinaryTree* pTree = new BinaryTree();
+    AbandonBinaryTree* pTree = new AbandonBinaryTree();
     assert(pTree);
     
     assert(pTree->GetSize() == 0);
@@ -69,35 +69,35 @@ void TestBinaryTree::TestGetSize()
 
 void TestBinaryTree::TestGetMinNode()
 {
-    BinaryTree* pTree = new BinaryTree();
+    AbandonBinaryTree* pTree = new AbandonBinaryTree();
     assert(pTree);
     
     pTree->Insert(0);
     pTree->Insert(1);
     pTree->Insert(2);
     
-    Node* minNode = pTree->GetMinNode();
+    AbandonNode* minNode = pTree->GetMinNode();
     assert(minNode != NULL);
     assert(minNode->key_value == 0);
 }
 
 void TestBinaryTree::TestGetMaxNode()
 {
-    BinaryTree* pTree = new BinaryTree();
+    AbandonBinaryTree* pTree = new AbandonBinaryTree();
     assert(pTree);
     
     pTree->Insert(0);
     pTree->Insert(1);
     pTree->Insert(2);
     
-    Node* maxNode = pTree->GetMaxNode();
+    AbandonNode* maxNode = pTree->GetMaxNode();
     assert(maxNode != NULL);
     assert(maxNode->key_value == 2);
 }
 
 void TestBinaryTree::TestDestroy()
 {
-    BinaryTree* pTree = new BinaryTree();
+    AbandonBinaryTree* pTree = new AbandonBinaryTree();
     assert(pTree);
     
     pTree->Insert(0);

@@ -38,7 +38,7 @@
 		AF0E580B1DDCA37C001740C6 /* Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E58091DDCA37C001740C6 /* Paths.cpp */; };
 		AF0E580E1DDCA524001740C6 /* DepthFirstPaths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF0E580C1DDCA524001740C6 /* DepthFirstPaths.cpp */; };
 		AF420A121DBE529600072FB6 /* ArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */; };
-		AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0C1DBE529600072FB6 /* BinaryTree.cpp */; };
+		AF420A131DBE529600072FB6 /* AbandonBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A0C1DBE529600072FB6 /* AbandonBinaryTree.cpp */; };
 		AF420A151DBE529600072FB6 /* TestArrayInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A101DBE529600072FB6 /* TestArrayInt.cpp */; };
 		AF420A181DC4D68F00072FB6 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A161DC4D68F00072FB6 /* Graph.cpp */; };
 		AF420A1B1DC4E77700072FB6 /* TestBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF420A191DC4E77700072FB6 /* TestBinaryTree.cpp */; };
@@ -124,9 +124,9 @@
 		AF4209FE1DBE506C00072FB6 /* DailyCoding */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DailyCoding; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF420A0A1DBE529600072FB6 /* ArrayInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayInt.cpp; sourceTree = "<group>"; };
 		AF420A0B1DBE529600072FB6 /* ArrayInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayInt.h; sourceTree = "<group>"; };
-		AF420A0C1DBE529600072FB6 /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
-		AF420A0D1DBE529600072FB6 /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
-		AF420A0F1DBE529600072FB6 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		AF420A0C1DBE529600072FB6 /* AbandonBinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbandonBinaryTree.cpp; sourceTree = "<group>"; };
+		AF420A0D1DBE529600072FB6 /* AbandonBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbandonBinaryTree.h; sourceTree = "<group>"; };
+		AF420A0F1DBE529600072FB6 /* AbandonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbandonNode.h; sourceTree = "<group>"; };
 		AF420A101DBE529600072FB6 /* TestArrayInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestArrayInt.cpp; sourceTree = "<group>"; };
 		AF420A111DBE529600072FB6 /* TestArrayInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayInt.h; sourceTree = "<group>"; };
 		AF420A161DC4D68F00072FB6 /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
@@ -274,9 +274,9 @@
 		AF0A07C91DFBC10E004C4D90 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
-				AF420A0C1DBE529600072FB6 /* BinaryTree.cpp */,
-				AF420A0D1DBE529600072FB6 /* BinaryTree.h */,
-				AF420A0F1DBE529600072FB6 /* Node.h */,
+				AF420A0C1DBE529600072FB6 /* AbandonBinaryTree.cpp */,
+				AF420A0D1DBE529600072FB6 /* AbandonBinaryTree.h */,
+				AF420A0F1DBE529600072FB6 /* AbandonNode.h */,
 			);
 			name = Tree;
 			sourceTree = "<group>";
@@ -466,7 +466,7 @@
 				AF0A07E11E0039BF004C4D90 /* Value.cpp in Sources */,
 				AF0A077B1DED9C7B004C4D90 /* TestGraph.cpp in Sources */,
 				AF0A07A41DF59E81004C4D90 /* DirectedDFS.cpp in Sources */,
-				AF420A131DBE529600072FB6 /* BinaryTree.cpp in Sources */,
+				AF420A131DBE529600072FB6 /* AbandonBinaryTree.cpp in Sources */,
 				AFEE8C561DC631C5002C7EDF /* SortAlgorithms.cpp in Sources */,
 				AF0A07A71DF5A631004C4D90 /* DirectedCycle.cpp in Sources */,
 				AF0A07D21DFD129E004C4D90 /* TestMinPQ.cpp in Sources */,
